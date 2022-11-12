@@ -1,0 +1,48 @@
+Loading G...
+Loading features...
+Loading class_map...
+cuda:0 pretrained/eaff148f142a42a2af40953777d06509.pt
+parameter number: 48715925
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Peak memuse 1.54 G
+Epoch:0100 train loss:0.418 | val loss:0.381 f1:71.946 best f1:71.564 Average epoch time: 3.71
+Epoch:0200 train loss:0.368 | val loss:0.358 f1:74.354 best f1:74.729 Average epoch time: 4.36
+Epoch:0300 train loss:0.336 | val loss:0.316 f1:77.455 best f1:77.832 Average epoch time: 4.51
+Epoch:0400 train loss:0.310 | val loss:0.282 f1:80.013 best f1:80.158 Average epoch time: 4.54
+Epoch:0500 train loss:0.285 | val loss:0.255 f1:81.926 best f1:81.751 Average epoch time: 4.59
+Epoch:0600 train loss:0.264 | val loss:0.239 f1:83.371 best f1:83.454 Average epoch time: 4.59
+Epoch:0700 train loss:0.244 | val loss:0.225 f1:84.633 best f1:84.826 Average epoch time: 4.65
+Traceback (most recent call last):
+  File "ppi.py", line 205, in <module>
+    loss_tra = train(label_weight)
+  File "ppi.py", line 131, in train
+    output = model(batch_feature, batch_adj)
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/data/liweikai/GCNII/model.py", line 106, in forward
+    layer_inner = self.act_fn(con(layer_inner, adj, h0, self.lamda, self.alpha, i + 1))
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/data/liweikai/GCNII/model.py", line 74, in forward
+    output = self.ngnn_fc(output)
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/data/liweikai/GCNII/model.py", line 31, in forward
+    output, gate = super().forward(inp, graph)
+  File "/data/liweikai/GCNII/fmoe_image.py", line 324, in forward
+    experts=self.experts
+  File "/data/liweikai/GCNII/fmoe_image.py", line 136, in _fmoe_general_global_forward
+    ) = prepare_forward(gate, num_expert, world_size)       # 这里出了问题
+  File "/data/liweikai/GCNII/fmoe_image.py", line 61, in prepare_forward
+    num_expert, world_size)
+  File "/data/liweikai/GCNII/fmoe_image.py", line 44, in count_by_gate
+    pos_size = lec_cum[-1].item()
+KeyboardInterrupt

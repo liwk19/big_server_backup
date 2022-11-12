@@ -1,0 +1,1901 @@
+WARNING:root:The OGB package is out of date. Your version is 1.2.5, while the latest version is 1.3.3.
+Using backend: pytorch
+INFO:root:Namespace(cpu=False, gpu=0, seed=0, n_runs=10, n_epochs=1500, use_labels=True, n_label_iters=1, mask_rate=0.5, no_attn_dst=True, use_norm=True, lr=0.002, n_layers=3, n_heads=3, n_hidden=256, dropout=0.8, hid_drop=0.8, input_drop=0.45, attn_drop=0.0, edge_drop=0.6, wd=0, log_every=50, save_pred=False, save='log/./kd/L3-H256-moe_True-ngnn_True/L3-H256-moe_True-ngnn_True-20220805-222544-d8ac1a68-db48-4ae1-bc20-620d1f2b06be', backbone='drgat', kd_dir='./kd/L3-H256-moe_True-ngnn_True', mode='student', alpha=0.95, temp=0.7, data_root_dir='./dataset/', pretrain_path='./dataset/ogbn-arxiv-pretrain/X.all.xrt-emb.npy', num_expert=4, top_k=1, no_teacher_moe=False, moe_widget=['ngnn'], expert_drop=0.15, gate='naive', moe_alpha=0.0)
+INFO:root:Number of params: 5050971
+/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/nn/functional.py:2747: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+INFO:root:Run: 1/10, Epoch: 50/1500, Average epoch time: 0.53
+Loss: 0.0618, Acc: 0.7322
+Train/Val/Test loss: 0.4906/0.7927/0.7966
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8448/0.7394/0.7378/0.7532/0.7383/40
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 100/1500, Average epoch time: 0.52
+Loss: 0.0478, Acc: 0.7669
+Train/Val/Test loss: 0.4369/0.7037/0.7409
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8556/0.7612/0.7480/0.7646/0.7572/99
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 150/1500, Average epoch time: 0.52
+Loss: 0.0455, Acc: 0.7723
+Train/Val/Test loss: 0.4510/0.6926/0.7336
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8495/0.7651/0.7503/0.7647/0.7603/143
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 200/1500, Average epoch time: 0.52
+Loss: 0.0441, Acc: 0.7770
+Train/Val/Test loss: 0.4641/0.6898/0.7030
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8443/0.7639/0.7599/0.7663/0.7604/190
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 250/1500, Average epoch time: 0.52
+Loss: 0.0418, Acc: 0.7834
+Train/Val/Test loss: 0.4453/0.6794/0.7030
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8515/0.7654/0.7588/0.7671/0.7596/215
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 300/1500, Average epoch time: 0.52
+Loss: 0.0415, Acc: 0.7844
+Train/Val/Test loss: 0.4553/0.6846/0.7295
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8487/0.7670/0.7505/0.7665/0.7612/293
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0403, Acc: 0.7885
+Train/Val/Test loss: 0.4510/0.6848/0.6965
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8500/0.7642/0.7603/0.7681/0.7631/323
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0403, Acc: 0.7915
+Train/Val/Test loss: 0.4522/0.6770/0.6938
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8494/0.7669/0.7622/0.7689/0.7589/380
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0398, Acc: 0.7918
+Train/Val/Test loss: 0.4373/0.6788/0.7214
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8559/0.7679/0.7531/0.7691/0.7612/415
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0398, Acc: 0.7909
+Train/Val/Test loss: 0.4344/0.6834/0.7141
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8545/0.7661/0.7558/0.7695/0.7616/497
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0401, Acc: 0.7918
+Train/Val/Test loss: 0.4546/0.6819/0.7093
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8491/0.7657/0.7572/0.7695/0.7616/497
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0393, Acc: 0.7942
+Train/Val/Test loss: 0.4308/0.6690/0.6937
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8582/0.7702/0.7611/0.7699/0.7632/565
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0386, Acc: 0.8013
+Train/Val/Test loss: 0.4324/0.6719/0.6882
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8587/0.7688/0.7637/0.7699/0.7632/565
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0383, Acc: 0.7993
+Train/Val/Test loss: 0.4253/0.6696/0.7029
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8617/0.7699/0.7589/0.7699/0.7632/565
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0377, Acc: 0.8022
+Train/Val/Test loss: 0.4184/0.6680/0.6996
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8635/0.7706/0.7601/0.7699/0.7625/708
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0376, Acc: 0.8019
+Train/Val/Test loss: 0.4104/0.6702/0.7115
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8664/0.7705/0.7560/0.7715/0.7610/754
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0374, Acc: 0.8027
+Train/Val/Test loss: 0.4106/0.6844/0.7361
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8656/0.7659/0.7484/0.7715/0.7610/754
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0380, Acc: 0.8050
+Train/Val/Test loss: 0.4160/0.6761/0.7124
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8646/0.7682/0.7547/0.7702/0.7615/881
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8077
+Train/Val/Test loss: 0.4047/0.6657/0.6872
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8683/0.7705/0.7629/0.7700/0.7616/940
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0368, Acc: 0.8074
+Train/Val/Test loss: 0.4000/0.6697/0.7036
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8704/0.7700/0.7574/0.7700/0.7616/940
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0361, Acc: 0.8094
+Train/Val/Test loss: 0.3947/0.6651/0.7010
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8721/0.7702/0.7590/0.7703/0.7629/1047
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0368, Acc: 0.8067
+Train/Val/Test loss: 0.3963/0.6698/0.7031
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8707/0.7692/0.7573/0.7712/0.7590/1074
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8085
+Train/Val/Test loss: 0.3951/0.6672/0.7014
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8711/0.7702/0.7589/0.7711/0.7614/1115
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8110
+Train/Val/Test loss: 0.3985/0.6663/0.6927
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8699/0.7697/0.7614/0.7709/0.7639/1190
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8093
+Train/Val/Test loss: 0.3838/0.6674/0.7026
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8754/0.7694/0.7582/0.7709/0.7639/1190
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0361, Acc: 0.8092
+Train/Val/Test loss: 0.3892/0.6715/0.7137
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8751/0.7695/0.7541/0.7709/0.7639/1190
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8134
+Train/Val/Test loss: 0.3790/0.6645/0.7039
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8765/0.7711/0.7585/0.7709/0.7639/1190
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0357, Acc: 0.8142
+Train/Val/Test loss: 0.3814/0.6650/0.6924
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8762/0.7702/0.7625/0.7709/0.7639/1190
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8150
+Train/Val/Test loss: 0.3855/0.6664/0.6948
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8749/0.7699/0.7603/0.7709/0.7626/1422
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 1/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0355, Acc: 0.8147
+Train/Val/Test loss: 0.3794/0.6668/0.6875
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8764/0.7696/0.7627/0.7709/0.7626/1422
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7709319104667942, Final test acc: 0.7626278213279015
+INFO:root:**************************************************
+INFO:root:Run: 2/10, Epoch: 50/1500, Average epoch time: 0.52
+Loss: 0.0644, Acc: 0.7365
+Train/Val/Test loss: 0.4857/0.7924/0.8060
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8544/0.7452/0.7421/0.7452/0.7421/50
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0507, Acc: 0.7593
+Train/Val/Test loss: 0.4469/0.7069/0.7351
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8537/0.7614/0.7520/0.7624/0.7510/95
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0473, Acc: 0.7702
+Train/Val/Test loss: 0.4569/0.6966/0.7054
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8493/0.7622/0.7578/0.7652/0.7532/130
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0450, Acc: 0.7751
+Train/Val/Test loss: 0.4595/0.6873/0.7080
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8465/0.7638/0.7580/0.7673/0.7598/192
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0434, Acc: 0.7797
+Train/Val/Test loss: 0.4580/0.6885/0.7177
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8487/0.7639/0.7534/0.7688/0.7613/243
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0421, Acc: 0.7814
+Train/Val/Test loss: 0.4573/0.6881/0.7247
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8482/0.7651/0.7514/0.7686/0.7641/291
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0416, Acc: 0.7854
+Train/Val/Test loss: 0.4648/0.6942/0.7409
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8460/0.7625/0.7473/0.7686/0.7641/291
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0408, Acc: 0.7891
+Train/Val/Test loss: 0.4561/0.6763/0.7011
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8499/0.7673/0.7586/0.7686/0.7641/291
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0408, Acc: 0.7848
+Train/Val/Test loss: 0.4516/0.6911/0.7431
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8512/0.7638/0.7457/0.7692/0.7589/439
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0398, Acc: 0.7927
+Train/Val/Test loss: 0.4410/0.6699/0.6886
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8538/0.7691/0.7633/0.7691/0.7633/500
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0389, Acc: 0.7964
+Train/Val/Test loss: 0.4382/0.6694/0.6879
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8564/0.7695/0.7641/0.7697/0.7631/523
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0388, Acc: 0.7981
+Train/Val/Test loss: 0.4325/0.6684/0.6897
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8579/0.7697/0.7624/0.7696/0.7632/554
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0387, Acc: 0.7985
+Train/Val/Test loss: 0.4382/0.6888/0.7410
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8557/0.7632/0.7454/0.7696/0.7623/645
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0381, Acc: 0.7979
+Train/Val/Test loss: 0.4238/0.6750/0.7105
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8628/0.7666/0.7561/0.7696/0.7623/645
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7997
+Train/Val/Test loss: 0.4308/0.6684/0.6883
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8595/0.7686/0.7637/0.7696/0.7623/645
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0379, Acc: 0.8032
+Train/Val/Test loss: 0.4199/0.6685/0.6807
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8625/0.7693/0.7658/0.7696/0.7623/645
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0374, Acc: 0.8055
+Train/Val/Test loss: 0.4173/0.6646/0.6907
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8648/0.7702/0.7621/0.7709/0.7629/848
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0371, Acc: 0.8048
+Train/Val/Test loss: 0.4102/0.6692/0.6981
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8682/0.7686/0.7602/0.7709/0.7629/848
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0371, Acc: 0.8056
+Train/Val/Test loss: 0.4107/0.6767/0.7226
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8666/0.7663/0.7512/0.7703/0.7636/943
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0366, Acc: 0.8085
+Train/Val/Test loss: 0.3991/0.6703/0.7155
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8709/0.7692/0.7542/0.7703/0.7636/943
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0369, Acc: 0.8081
+Train/Val/Test loss: 0.4034/0.6682/0.6965
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8681/0.7698/0.7594/0.7715/0.7642/1017
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0360, Acc: 0.8103
+Train/Val/Test loss: 0.3967/0.6637/0.6953
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8723/0.7703/0.7601/0.7715/0.7642/1017
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0361, Acc: 0.8108
+Train/Val/Test loss: 0.3935/0.6700/0.7113
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8730/0.7696/0.7550/0.7715/0.7642/1017
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8119
+Train/Val/Test loss: 0.3933/0.6617/0.6814
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8731/0.7717/0.7651/0.7717/0.7651/1200
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8123
+Train/Val/Test loss: 0.3958/0.6646/0.6898
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8731/0.7701/0.7622/0.7714/0.7624/1212
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0357, Acc: 0.8139
+Train/Val/Test loss: 0.3868/0.6614/0.6844
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8761/0.7705/0.7639/0.7714/0.7624/1212
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0357, Acc: 0.8141
+Train/Val/Test loss: 0.3827/0.6634/0.6826
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8768/0.7705/0.7644/0.7715/0.7639/1316
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0358, Acc: 0.8141
+Train/Val/Test loss: 0.3888/0.6649/0.6875
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8748/0.7708/0.7632/0.7715/0.7639/1316
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8146
+Train/Val/Test loss: 0.3848/0.6641/0.6841
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8762/0.7692/0.7640/0.7715/0.7639/1316
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 2/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0357, Acc: 0.8162
+Train/Val/Test loss: 0.3768/0.6608/0.6826
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8790/0.7715/0.7647/0.7718/0.7631/1496
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7718044229672136, Final test acc: 0.7631216180071189
+INFO:root:**************************************************
+INFO:root:Run: 3/10, Epoch: 50/1500, Average epoch time: 0.51
+Loss: 0.0667, Acc: 0.7231
+Train/Val/Test loss: 0.6401/0.9526/0.9328
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8267/0.6941/0.7012/0.7397/0.7282/45
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0517, Acc: 0.7571
+Train/Val/Test loss: 0.4619/0.7141/0.7229
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8488/0.7585/0.7560/0.7595/0.7558/98
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0494, Acc: 0.7638
+Train/Val/Test loss: 0.4768/0.6998/0.7279
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8496/0.7638/0.7553/0.7638/0.7567/136
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0471, Acc: 0.7725
+Train/Val/Test loss: 0.4790/0.7325/0.7905
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8405/0.7550/0.7338/0.7649/0.7558/195
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0441, Acc: 0.7760
+Train/Val/Test loss: 0.4565/0.6829/0.6968
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8463/0.7654/0.7591/0.7663/0.7588/248
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0436, Acc: 0.7768
+Train/Val/Test loss: 0.4544/0.6965/0.7393
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8476/0.7625/0.7482/0.7677/0.7607/282
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0426, Acc: 0.7837
+Train/Val/Test loss: 0.4574/0.6814/0.7101
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8465/0.7668/0.7568/0.7682/0.7567/341
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0442, Acc: 0.7762
+Train/Val/Test loss: 0.4867/0.7076/0.7214
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8353/0.7596/0.7539/0.7675/0.7601/378
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0412, Acc: 0.7878
+Train/Val/Test loss: 0.4556/0.6764/0.6947
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8463/0.7671/0.7617/0.7692/0.7619/442
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0404, Acc: 0.7876
+Train/Val/Test loss: 0.4483/0.6850/0.7331
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8500/0.7659/0.7484/0.7688/0.7622/495
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0400, Acc: 0.7930
+Train/Val/Test loss: 0.4424/0.6710/0.7036
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8520/0.7696/0.7589/0.7688/0.7622/495
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0394, Acc: 0.7927
+Train/Val/Test loss: 0.4369/0.6698/0.6925
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8548/0.7693/0.7615/0.7700/0.7628/596
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0392, Acc: 0.7933
+Train/Val/Test loss: 0.4350/0.6729/0.7000
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8554/0.7682/0.7587/0.7700/0.7628/596
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7980
+Train/Val/Test loss: 0.4293/0.6673/0.6980
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8574/0.7704/0.7593/0.7709/0.7604/695
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0383, Acc: 0.8002
+Train/Val/Test loss: 0.4337/0.6706/0.6979
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8563/0.7689/0.7600/0.7709/0.7604/695
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0387, Acc: 0.7970
+Train/Val/Test loss: 0.4223/0.6775/0.7227
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8608/0.7679/0.7525/0.7709/0.7604/695
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0378, Acc: 0.7990
+Train/Val/Test loss: 0.4158/0.6752/0.7214
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8625/0.7676/0.7523/0.7703/0.7628/809
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0376, Acc: 0.8020
+Train/Val/Test loss: 0.4136/0.6718/0.7102
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8636/0.7690/0.7553/0.7716/0.7617/893
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0378, Acc: 0.8023
+Train/Val/Test loss: 0.4103/0.6696/0.6982
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8647/0.7694/0.7593/0.7716/0.7617/893
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0373, Acc: 0.8076
+Train/Val/Test loss: 0.4136/0.6633/0.6868
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8634/0.7705/0.7636/0.7708/0.7621/990
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0373, Acc: 0.8052
+Train/Val/Test loss: 0.4141/0.6735/0.7199
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8634/0.7700/0.7528/0.7708/0.7621/990
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0366, Acc: 0.8076
+Train/Val/Test loss: 0.3947/0.6676/0.7098
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8703/0.7716/0.7557/0.7721/0.7629/1085
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0366, Acc: 0.8080
+Train/Val/Test loss: 0.4011/0.6640/0.6911
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8681/0.7709/0.7615/0.7716/0.7607/1115
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8100
+Train/Val/Test loss: 0.3992/0.6623/0.6938
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8687/0.7708/0.7603/0.7716/0.7607/1115
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8111
+Train/Val/Test loss: 0.3964/0.6660/0.7058
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8705/0.7712/0.7562/0.7709/0.7620/1202
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0366, Acc: 0.8094
+Train/Val/Test loss: 0.4013/0.6673/0.6897
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8690/0.7695/0.7621/0.7709/0.7620/1202
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0360, Acc: 0.8117
+Train/Val/Test loss: 0.3891/0.6685/0.7108
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8714/0.7704/0.7555/0.7709/0.7620/1202
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0360, Acc: 0.8119
+Train/Val/Test loss: 0.3824/0.6673/0.6945
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8743/0.7697/0.7599/0.7709/0.7620/1202
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0357, Acc: 0.8123
+Train/Val/Test loss: 0.3877/0.6636/0.6904
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8724/0.7706/0.7612/0.7709/0.7620/1202
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 3/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8127
+Train/Val/Test loss: 0.3851/0.6636/0.6903
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8731/0.7713/0.7605/0.7720/0.7625/1458
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7720393301788651, Final test acc: 0.7625043721580972
+INFO:root:**************************************************
+INFO:root:Run: 4/10, Epoch: 50/1500, Average epoch time: 0.52
+Loss: 0.0631, Acc: 0.7255
+Train/Val/Test loss: 0.5044/0.7965/0.7912
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8467/0.7383/0.7417/0.7385/0.7432/48
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 100/1500, Average epoch time: 0.52
+Loss: 0.0508, Acc: 0.7554
+Train/Val/Test loss: 0.4669/0.7185/0.7709
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8528/0.7608/0.7426/0.7589/0.7549/97
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0472, Acc: 0.7640
+Train/Val/Test loss: 0.4713/0.6960/0.7256
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8459/0.7645/0.7539/0.7646/0.7574/127
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0463, Acc: 0.7700
+Train/Val/Test loss: 0.4777/0.6920/0.7194
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8430/0.7645/0.7553/0.7634/0.7582/189
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0449, Acc: 0.7693
+Train/Val/Test loss: 0.4813/0.7125/0.7676
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8386/0.7598/0.7406/0.7666/0.7566/229
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0442, Acc: 0.7747
+Train/Val/Test loss: 0.4718/0.6896/0.7169
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8433/0.7632/0.7550/0.7680/0.7581/288
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0433, Acc: 0.7768
+Train/Val/Test loss: 0.4696/0.6969/0.7073
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8411/0.7601/0.7577/0.7672/0.7588/336
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0426, Acc: 0.7804
+Train/Val/Test loss: 0.4682/0.6852/0.6996
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8411/0.7646/0.7600/0.7675/0.7626/384
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0412, Acc: 0.7860
+Train/Val/Test loss: 0.4742/0.6837/0.6982
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8399/0.7649/0.7609/0.7675/0.7626/384
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0406, Acc: 0.7859
+Train/Val/Test loss: 0.4617/0.6842/0.7183
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8437/0.7656/0.7541/0.7675/0.7626/384
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7878
+Train/Val/Test loss: 0.4661/0.6820/0.7054
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8421/0.7650/0.7577/0.7689/0.7628/508
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0394, Acc: 0.7904
+Train/Val/Test loss: 0.4479/0.6734/0.7101
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8486/0.7680/0.7552/0.7691/0.7572/598
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0396, Acc: 0.7893
+Train/Val/Test loss: 0.4494/0.6870/0.7356
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8486/0.7635/0.7484/0.7689/0.7594/608
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0392, Acc: 0.7916
+Train/Val/Test loss: 0.4474/0.6927/0.7490
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8486/0.7621/0.7431/0.7674/0.7613/670
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7952
+Train/Val/Test loss: 0.4363/0.6772/0.7176
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8546/0.7676/0.7526/0.7674/0.7613/670
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0380, Acc: 0.7957
+Train/Val/Test loss: 0.4387/0.6812/0.7271
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8528/0.7650/0.7508/0.7695/0.7579/783
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0382, Acc: 0.7977
+Train/Val/Test loss: 0.4369/0.6770/0.6900
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8530/0.7664/0.7620/0.7695/0.7647/822
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0381, Acc: 0.7979
+Train/Val/Test loss: 0.4268/0.6728/0.6976
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8572/0.7680/0.7610/0.7696/0.7631/886
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0375, Acc: 0.8024
+Train/Val/Test loss: 0.4370/0.6716/0.6929
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8522/0.7664/0.7614/0.7702/0.7643/918
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0368, Acc: 0.8050
+Train/Val/Test loss: 0.4266/0.6705/0.6889
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8570/0.7682/0.7626/0.7700/0.7605/959
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0374, Acc: 0.8027
+Train/Val/Test loss: 0.4212/0.6655/0.6829
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8588/0.7693/0.7654/0.7704/0.7626/1026
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0368, Acc: 0.8058
+Train/Val/Test loss: 0.4134/0.6730/0.7164
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8625/0.7679/0.7542/0.7704/0.7626/1026
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8059
+Train/Val/Test loss: 0.4150/0.6641/0.6871
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8615/0.7706/0.7626/0.7709/0.7625/1148
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8074
+Train/Val/Test loss: 0.4134/0.6652/0.6900
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8625/0.7705/0.7627/0.7709/0.7625/1148
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0365, Acc: 0.8081
+Train/Val/Test loss: 0.4081/0.6714/0.7114
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8638/0.7682/0.7549/0.7709/0.7625/1148
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0363, Acc: 0.8080
+Train/Val/Test loss: 0.4115/0.6786/0.7256
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8638/0.7674/0.7503/0.7709/0.7625/1148
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0355, Acc: 0.8109
+Train/Val/Test loss: 0.3976/0.6659/0.6905
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8685/0.7698/0.7623/0.7704/0.7632/1305
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0359, Acc: 0.8108
+Train/Val/Test loss: 0.4066/0.6657/0.6900
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8644/0.7701/0.7621/0.7704/0.7632/1305
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0360, Acc: 0.8122
+Train/Val/Test loss: 0.4087/0.6701/0.6969
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8641/0.7683/0.7596/0.7704/0.7632/1305
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 4/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8128
+Train/Val/Test loss: 0.4020/0.6675/0.7027
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8667/0.7700/0.7566/0.7704/0.7632/1305
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7703949796973053, Final test acc: 0.763183342592021
+INFO:root:**************************************************
+INFO:root:Run: 5/10, Epoch: 50/1500, Average epoch time: 0.51
+Loss: 0.0642, Acc: 0.7178
+Train/Val/Test loss: 0.4940/0.8695/0.9819
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8422/0.7182/0.6816/0.7359/0.7258/45
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0505, Acc: 0.7586
+Train/Val/Test loss: 0.4559/0.7094/0.7499
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8528/0.7604/0.7477/0.7607/0.7498/98
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0480, Acc: 0.7647
+Train/Val/Test loss: 0.4562/0.6966/0.7320
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8505/0.7623/0.7507/0.7623/0.7507/150
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0457, Acc: 0.7729
+Train/Val/Test loss: 0.4587/0.6867/0.7111
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8485/0.7650/0.7557/0.7659/0.7571/198
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0448, Acc: 0.7738
+Train/Val/Test loss: 0.4645/0.6878/0.7020
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8446/0.7642/0.7596/0.7655/0.7571/238
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0439, Acc: 0.7773
+Train/Val/Test loss: 0.4628/0.6888/0.7015
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8434/0.7643/0.7587/0.7669/0.7544/273
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0430, Acc: 0.7806
+Train/Val/Test loss: 0.4563/0.6828/0.7237
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8465/0.7664/0.7521/0.7653/0.7578/329
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0419, Acc: 0.7836
+Train/Val/Test loss: 0.4549/0.6826/0.7214
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8464/0.7664/0.7526/0.7678/0.7612/375
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0413, Acc: 0.7859
+Train/Val/Test loss: 0.4499/0.6811/0.7148
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8478/0.7653/0.7550/0.7676/0.7604/419
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0408, Acc: 0.7873
+Train/Val/Test loss: 0.4524/0.6796/0.7009
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8475/0.7659/0.7599/0.7676/0.7604/419
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0406, Acc: 0.7891
+Train/Val/Test loss: 0.4532/0.6804/0.6942
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8469/0.7663/0.7614/0.7705/0.7595/528
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0399, Acc: 0.7915
+Train/Val/Test loss: 0.4494/0.6827/0.7262
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8497/0.7673/0.7503/0.7705/0.7595/528
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0394, Acc: 0.7932
+Train/Val/Test loss: 0.4441/0.6749/0.6984
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8516/0.7670/0.7605/0.7705/0.7595/528
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0390, Acc: 0.7942
+Train/Val/Test loss: 0.4311/0.6783/0.7185
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8567/0.7667/0.7529/0.7696/0.7628/660
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0391, Acc: 0.7940
+Train/Val/Test loss: 0.4340/0.6773/0.7112
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8542/0.7679/0.7571/0.7696/0.7628/660
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0383, Acc: 0.7995
+Train/Val/Test loss: 0.4357/0.6791/0.6999
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8538/0.7649/0.7587/0.7696/0.7621/791
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0383, Acc: 0.8000
+Train/Val/Test loss: 0.4219/0.6806/0.7271
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8601/0.7671/0.7504/0.7696/0.7621/791
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0382, Acc: 0.8004
+Train/Val/Test loss: 0.4233/0.6751/0.7151
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8613/0.7675/0.7538/0.7696/0.7621/791
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0373, Acc: 0.8026
+Train/Val/Test loss: 0.4150/0.6704/0.7109
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8636/0.7689/0.7550/0.7696/0.7621/791
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0372, Acc: 0.8053
+Train/Val/Test loss: 0.4149/0.6699/0.6993
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8626/0.7688/0.7590/0.7705/0.7614/997
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0373, Acc: 0.8040
+Train/Val/Test loss: 0.4166/0.6791/0.7269
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8623/0.7658/0.7502/0.7715/0.7631/1041
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0373, Acc: 0.8029
+Train/Val/Test loss: 0.4021/0.6718/0.7062
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8688/0.7684/0.7574/0.7715/0.7631/1041
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0368, Acc: 0.8070
+Train/Val/Test loss: 0.4036/0.6656/0.6893
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8688/0.7698/0.7632/0.7710/0.7644/1130
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8093
+Train/Val/Test loss: 0.3961/0.6660/0.6932
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8703/0.7704/0.7608/0.7710/0.7644/1130
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0360, Acc: 0.8099
+Train/Val/Test loss: 0.3999/0.6665/0.6924
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8691/0.7697/0.7616/0.7710/0.7644/1130
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8111
+Train/Val/Test loss: 0.3962/0.6637/0.6913
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8701/0.7715/0.7621/0.7710/0.7644/1130
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8122
+Train/Val/Test loss: 0.3973/0.6716/0.7066
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8689/0.7684/0.7572/0.7714/0.7639/1302
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8147
+Train/Val/Test loss: 0.3992/0.6653/0.6918
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8680/0.7704/0.7614/0.7714/0.7639/1302
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0359, Acc: 0.8112
+Train/Val/Test loss: 0.3877/0.6681/0.7075
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8749/0.7691/0.7564/0.7707/0.7631/1405
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 5/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0356, Acc: 0.8129
+Train/Val/Test loss: 0.3923/0.6665/0.6868
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8712/0.7689/0.7635/0.7707/0.7631/1405
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7707305614282358, Final test acc: 0.7631010431454849
+INFO:root:**************************************************
+INFO:root:Run: 6/10, Epoch: 50/1500, Average epoch time: 0.52
+Loss: 0.0633, Acc: 0.7189
+Train/Val/Test loss: 0.5122/0.7911/0.7994
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8411/0.7394/0.7364/0.7394/0.7364/50
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0513, Acc: 0.7559
+Train/Val/Test loss: 0.4708/0.7159/0.7292
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8479/0.7574/0.7529/0.7593/0.7515/94
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 150/1500, Average epoch time: 0.52
+Loss: 0.0481, Acc: 0.7641
+Train/Val/Test loss: 0.4656/0.6979/0.7355
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8472/0.7634/0.7500/0.7645/0.7519/119
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0469, Acc: 0.7638
+Train/Val/Test loss: 0.4708/0.7009/0.7390
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8431/0.7634/0.7502/0.7650/0.7575/192
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0457, Acc: 0.7717
+Train/Val/Test loss: 0.4580/0.6943/0.7114
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8453/0.7620/0.7554/0.7664/0.7601/238
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0439, Acc: 0.7744
+Train/Val/Test loss: 0.4689/0.6905/0.7223
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8433/0.7647/0.7536/0.7664/0.7601/238
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0433, Acc: 0.7761
+Train/Val/Test loss: 0.4635/0.6904/0.7190
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8445/0.7648/0.7547/0.7672/0.7571/331
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0427, Acc: 0.7797
+Train/Val/Test loss: 0.4586/0.6780/0.7014
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8453/0.7672/0.7597/0.7672/0.7597/400
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0431, Acc: 0.7795
+Train/Val/Test loss: 0.4694/0.6907/0.6982
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8404/0.7624/0.7601/0.7681/0.7568/431
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0412, Acc: 0.7821
+Train/Val/Test loss: 0.4538/0.6841/0.7269
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8472/0.7648/0.7517/0.7692/0.7598/489
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0410, Acc: 0.7867
+Train/Val/Test loss: 0.4440/0.6733/0.6997
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8508/0.7673/0.7597/0.7679/0.7624/501
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0401, Acc: 0.7886
+Train/Val/Test loss: 0.4483/0.6759/0.7072
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8490/0.7676/0.7568/0.7691/0.7588/599
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0396, Acc: 0.7906
+Train/Val/Test loss: 0.4402/0.6773/0.7201
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8518/0.7685/0.7529/0.7691/0.7588/599
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0397, Acc: 0.7903
+Train/Val/Test loss: 0.4440/0.6732/0.6983
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8498/0.7679/0.7596/0.7694/0.7581/664
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0398, Acc: 0.7888
+Train/Val/Test loss: 0.4388/0.6864/0.7278
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8523/0.7645/0.7511/0.7686/0.7590/730
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0388, Acc: 0.7960
+Train/Val/Test loss: 0.4345/0.6788/0.7280
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8535/0.7668/0.7509/0.7700/0.7660/797
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7954
+Train/Val/Test loss: 0.4312/0.6700/0.7078
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8556/0.7683/0.7565/0.7707/0.7645/835
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0384, Acc: 0.7942
+Train/Val/Test loss: 0.4263/0.6745/0.7153
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8575/0.7666/0.7557/0.7707/0.7645/835
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0381, Acc: 0.7977
+Train/Val/Test loss: 0.4242/0.6688/0.6988
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8580/0.7692/0.7582/0.7707/0.7645/835
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0379, Acc: 0.8017
+Train/Val/Test loss: 0.4212/0.6674/0.6905
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8598/0.7701/0.7626/0.7707/0.7645/835
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0378, Acc: 0.8017
+Train/Val/Test loss: 0.4189/0.6749/0.7187
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8604/0.7677/0.7533/0.7720/0.7618/1042
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0375, Acc: 0.8033
+Train/Val/Test loss: 0.4158/0.6688/0.6865
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8614/0.7690/0.7633/0.7705/0.7610/1084
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0373, Acc: 0.8037
+Train/Val/Test loss: 0.4163/0.6688/0.6969
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8616/0.7691/0.7595/0.7702/0.7634/1140
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0370, Acc: 0.8056
+Train/Val/Test loss: 0.4105/0.6665/0.6905
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8634/0.7694/0.7621/0.7702/0.7634/1140
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0374, Acc: 0.8050
+Train/Val/Test loss: 0.4080/0.6791/0.7274
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8654/0.7671/0.7505/0.7702/0.7634/1140
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0361, Acc: 0.8098
+Train/Val/Test loss: 0.4073/0.6704/0.6962
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8646/0.7689/0.7601/0.7715/0.7639/1271
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8088
+Train/Val/Test loss: 0.4068/0.6672/0.6939
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8645/0.7698/0.7615/0.7715/0.7639/1271
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0369, Acc: 0.8073
+Train/Val/Test loss: 0.4091/0.6702/0.7024
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8639/0.7688/0.7588/0.7715/0.7639/1271
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0360, Acc: 0.8102
+Train/Val/Test loss: 0.4067/0.6700/0.7079
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8648/0.7682/0.7558/0.7715/0.7639/1271
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 6/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0355, Acc: 0.8131
+Train/Val/Test loss: 0.3904/0.6615/0.6905
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8710/0.7712/0.7614/0.7712/0.7614/1500
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7711668176784456, Final test acc: 0.7613933296298583
+INFO:root:**************************************************
+INFO:root:Run: 7/10, Epoch: 50/1500, Average epoch time: 0.51
+Loss: 0.0608, Acc: 0.7337
+Train/Val/Test loss: 0.4941/0.7781/0.8009
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8491/0.7452/0.7383/0.7434/0.7309/47
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0508, Acc: 0.7581
+Train/Val/Test loss: 0.4462/0.7114/0.7450
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8531/0.7607/0.7498/0.7601/0.7520/90
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0480, Acc: 0.7637
+Train/Val/Test loss: 0.4607/0.7131/0.7722
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8477/0.7601/0.7402/0.7629/0.7578/149
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0467, Acc: 0.7698
+Train/Val/Test loss: 0.4683/0.6886/0.7182
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8480/0.7660/0.7558/0.7654/0.7578/198
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0456, Acc: 0.7690
+Train/Val/Test loss: 0.4662/0.6987/0.7463
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8463/0.7616/0.7454/0.7683/0.7575/247
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0443, Acc: 0.7750
+Train/Val/Test loss: 0.4751/0.6889/0.7175
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8447/0.7645/0.7549/0.7682/0.7604/257
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0443, Acc: 0.7705
+Train/Val/Test loss: 0.4720/0.6994/0.7540
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8433/0.7615/0.7429/0.7682/0.7604/257
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0430, Acc: 0.7766
+Train/Val/Test loss: 0.4643/0.6965/0.7509
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8435/0.7618/0.7429/0.7675/0.7602/395
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0428, Acc: 0.7799
+Train/Val/Test loss: 0.4582/0.6820/0.7144
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8466/0.7664/0.7556/0.7674/0.7582/447
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0415, Acc: 0.7847
+Train/Val/Test loss: 0.4567/0.6753/0.6973
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8458/0.7676/0.7600/0.7674/0.7582/447
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0407, Acc: 0.7858
+Train/Val/Test loss: 0.4512/0.6849/0.7322
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8484/0.7651/0.7480/0.7689/0.7598/549
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0409, Acc: 0.7841
+Train/Val/Test loss: 0.4498/0.6939/0.7517
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8472/0.7622/0.7418/0.7689/0.7598/549
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0404, Acc: 0.7855
+Train/Val/Test loss: 0.4654/0.6765/0.7138
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8441/0.7671/0.7556/0.7684/0.7645/637
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0399, Acc: 0.7883
+Train/Val/Test loss: 0.4454/0.6754/0.7103
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8500/0.7660/0.7547/0.7684/0.7639/675
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0389, Acc: 0.7932
+Train/Val/Test loss: 0.4418/0.6753/0.7163
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8516/0.7675/0.7533/0.7711/0.7639/741
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0391, Acc: 0.7949
+Train/Val/Test loss: 0.4465/0.6803/0.7299
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8504/0.7659/0.7480/0.7711/0.7639/741
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0393, Acc: 0.7970
+Train/Val/Test loss: 0.4313/0.6795/0.7059
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8556/0.7655/0.7570/0.7711/0.7639/741
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0387, Acc: 0.7950
+Train/Val/Test loss: 0.4303/0.6730/0.7187
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8557/0.7672/0.7513/0.7711/0.7639/741
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0381, Acc: 0.7979
+Train/Val/Test loss: 0.4269/0.6669/0.7023
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8581/0.7689/0.7582/0.7699/0.7630/940
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0383, Acc: 0.7978
+Train/Val/Test loss: 0.4287/0.6723/0.7061
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8573/0.7676/0.7568/0.7704/0.7594/981
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0376, Acc: 0.8017
+Train/Val/Test loss: 0.4108/0.6639/0.6939
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8637/0.7698/0.7611/0.7698/0.7611/1050
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0375, Acc: 0.8022
+Train/Val/Test loss: 0.4195/0.6762/0.7236
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8601/0.7661/0.7490/0.7698/0.7611/1050
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0372, Acc: 0.8048
+Train/Val/Test loss: 0.4230/0.6698/0.7062
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8581/0.7681/0.7562/0.7698/0.7611/1050
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0370, Acc: 0.8056
+Train/Val/Test loss: 0.4140/0.6668/0.6974
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8620/0.7699/0.7593/0.7698/0.7611/1050
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0366, Acc: 0.8067
+Train/Val/Test loss: 0.4082/0.6679/0.6959
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8657/0.7682/0.7593/0.7698/0.7611/1050
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0367, Acc: 0.8077
+Train/Val/Test loss: 0.4087/0.6653/0.6942
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8648/0.7698/0.7608/0.7693/0.7629/1268
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0367, Acc: 0.8061
+Train/Val/Test loss: 0.4051/0.6660/0.6802
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8666/0.7697/0.7648/0.7693/0.7629/1268
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0361, Acc: 0.8082
+Train/Val/Test loss: 0.4002/0.6658/0.6983
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8679/0.7697/0.7584/0.7699/0.7612/1380
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0364, Acc: 0.8080
+Train/Val/Test loss: 0.4059/0.6759/0.7219
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8667/0.7661/0.7495/0.7714/0.7608/1410
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 7/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0358, Acc: 0.8123
+Train/Val/Test loss: 0.4034/0.6719/0.7133
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8666/0.7680/0.7533/0.7714/0.7608/1410
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7714352830631901, Final test acc: 0.7607555089192025
+INFO:root:**************************************************
+INFO:root:Run: 8/10, Epoch: 50/1500, Average epoch time: 0.51
+Loss: 0.0652, Acc: 0.7123
+Train/Val/Test loss: 0.4766/0.7964/0.7989
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8466/0.7389/0.7373/0.7415/0.7376/48
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0509, Acc: 0.7513
+Train/Val/Test loss: 0.4538/0.7170/0.7589
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8533/0.7595/0.7454/0.7595/0.7454/100
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0486, Acc: 0.7600
+Train/Val/Test loss: 0.4688/0.7060/0.7323
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8432/0.7605/0.7529/0.7613/0.7539/143
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0471, Acc: 0.7649
+Train/Val/Test loss: 0.4827/0.7039/0.7265
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8419/0.7605/0.7525/0.7651/0.7582/192
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0442, Acc: 0.7726
+Train/Val/Test loss: 0.4754/0.6873/0.7029
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8409/0.7644/0.7590/0.7661/0.7585/248
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0439, Acc: 0.7722
+Train/Val/Test loss: 0.4795/0.6992/0.7479
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8399/0.7628/0.7450/0.7647/0.7590/287
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0440, Acc: 0.7711
+Train/Val/Test loss: 0.4766/0.6843/0.6992
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8414/0.7656/0.7600/0.7671/0.7601/335
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0428, Acc: 0.7763
+Train/Val/Test loss: 0.4791/0.6793/0.6972
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8414/0.7662/0.7607/0.7662/0.7607/400
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0433, Acc: 0.7712
+Train/Val/Test loss: 0.4834/0.6910/0.7415
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8391/0.7650/0.7467/0.7677/0.7602/404
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0422, Acc: 0.7764
+Train/Val/Test loss: 0.4765/0.6965/0.7493
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8399/0.7636/0.7438/0.7680/0.7584/483
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0409, Acc: 0.7830
+Train/Val/Test loss: 0.4725/0.6843/0.7197
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8401/0.7648/0.7530/0.7697/0.7566/516
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0420, Acc: 0.7789
+Train/Val/Test loss: 0.4744/0.6805/0.7033
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8410/0.7669/0.7579/0.7695/0.7573/553
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0411, Acc: 0.7805
+Train/Val/Test loss: 0.4719/0.6789/0.7058
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8415/0.7672/0.7567/0.7695/0.7573/553
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0405, Acc: 0.7848
+Train/Val/Test loss: 0.4647/0.6770/0.6971
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8439/0.7669/0.7610/0.7695/0.7573/553
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7865
+Train/Val/Test loss: 0.4700/0.6805/0.6935
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8409/0.7661/0.7618/0.7695/0.7622/729
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7873
+Train/Val/Test loss: 0.4645/0.6763/0.6976
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8438/0.7660/0.7596/0.7695/0.7622/729
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7845
+Train/Val/Test loss: 0.4575/0.6810/0.7138
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8451/0.7663/0.7557/0.7690/0.7635/835
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7840
+Train/Val/Test loss: 0.4638/0.6833/0.7042
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8441/0.7656/0.7590/0.7690/0.7635/835
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0395, Acc: 0.7879
+Train/Val/Test loss: 0.4563/0.6767/0.6971
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8453/0.7675/0.7597/0.7699/0.7617/916
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0392, Acc: 0.7888
+Train/Val/Test loss: 0.4581/0.6794/0.7070
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8446/0.7666/0.7558/0.7699/0.7617/916
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0392, Acc: 0.7912
+Train/Val/Test loss: 0.4577/0.6718/0.6871
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8447/0.7682/0.7627/0.7701/0.7615/1031
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0394, Acc: 0.7902
+Train/Val/Test loss: 0.4563/0.6757/0.7180
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8461/0.7663/0.7526/0.7701/0.7615/1031
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7921
+Train/Val/Test loss: 0.4479/0.6729/0.7112
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8483/0.7683/0.7549/0.7701/0.7635/1149
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0389, Acc: 0.7938
+Train/Val/Test loss: 0.4488/0.6729/0.7098
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8494/0.7682/0.7551/0.7701/0.7635/1149
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0387, Acc: 0.7927
+Train/Val/Test loss: 0.4543/0.6661/0.6873
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8470/0.7706/0.7628/0.7706/0.7628/1250
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0379, Acc: 0.7932
+Train/Val/Test loss: 0.4465/0.6673/0.6947
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8495/0.7698/0.7611/0.7711/0.7615/1258
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7954
+Train/Val/Test loss: 0.4449/0.6718/0.6914
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8494/0.7688/0.7614/0.7711/0.7615/1258
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0382, Acc: 0.7928
+Train/Val/Test loss: 0.4481/0.6711/0.7119
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8490/0.7687/0.7551/0.7711/0.7615/1258
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0381, Acc: 0.7945
+Train/Val/Test loss: 0.4431/0.6709/0.7112
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8524/0.7691/0.7548/0.7711/0.7615/1258
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 8/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0379, Acc: 0.7969
+Train/Val/Test loss: 0.4522/0.6762/0.7116
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8476/0.7658/0.7546/0.7711/0.7615/1258
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7710997013322595, Final test acc: 0.7614962039380285
+INFO:root:**************************************************
+INFO:root:Run: 9/10, Epoch: 50/1500, Average epoch time: 0.51
+Loss: 0.0638, Acc: 0.7168
+Train/Val/Test loss: 0.4973/0.7953/0.8285
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8439/0.7416/0.7307/0.7443/0.7375/47
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0505, Acc: 0.7575
+Train/Val/Test loss: 0.4592/0.7044/0.7243
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8524/0.7618/0.7553/0.7618/0.7553/100
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0477, Acc: 0.7652
+Train/Val/Test loss: 0.4708/0.6959/0.7110
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8437/0.7635/0.7573/0.7645/0.7556/131
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0460, Acc: 0.7670
+Train/Val/Test loss: 0.4648/0.6927/0.7316
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8440/0.7648/0.7514/0.7644/0.7596/199
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0457, Acc: 0.7698
+Train/Val/Test loss: 0.4847/0.6922/0.7260
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8433/0.7655/0.7533/0.7665/0.7597/220
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0441, Acc: 0.7724
+Train/Val/Test loss: 0.4636/0.6860/0.7242
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8464/0.7663/0.7528/0.7669/0.7598/278
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0431, Acc: 0.7779
+Train/Val/Test loss: 0.4709/0.6797/0.7029
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8422/0.7667/0.7591/0.7669/0.7598/278
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0422, Acc: 0.7778
+Train/Val/Test loss: 0.4586/0.6824/0.7063
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8455/0.7660/0.7581/0.7690/0.7582/399
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0421, Acc: 0.7809
+Train/Val/Test loss: 0.4678/0.6779/0.6924
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8426/0.7668/0.7619/0.7690/0.7582/399
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0420, Acc: 0.7847
+Train/Val/Test loss: 0.4571/0.6755/0.6977
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8474/0.7674/0.7600/0.7689/0.7623/456
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0407, Acc: 0.7871
+Train/Val/Test loss: 0.4551/0.6739/0.6939
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8463/0.7671/0.7620/0.7680/0.7577/549
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7900
+Train/Val/Test loss: 0.4480/0.6707/0.7021
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8493/0.7687/0.7594/0.7703/0.7615/590
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0404, Acc: 0.7888
+Train/Val/Test loss: 0.4584/0.6761/0.6938
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8455/0.7673/0.7616/0.7703/0.7615/590
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0397, Acc: 0.7898
+Train/Val/Test loss: 0.4521/0.6801/0.7213
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8463/0.7662/0.7517/0.7693/0.7636/679
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0395, Acc: 0.7920
+Train/Val/Test loss: 0.4565/0.6807/0.6904
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8460/0.7648/0.7625/0.7691/0.7623/744
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0392, Acc: 0.7928
+Train/Val/Test loss: 0.4484/0.6794/0.7249
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8487/0.7668/0.7518/0.7711/0.7612/765
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0387, Acc: 0.7949
+Train/Val/Test loss: 0.4313/0.6687/0.6953
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8559/0.7686/0.7603/0.7711/0.7612/765
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0380, Acc: 0.7956
+Train/Val/Test loss: 0.4307/0.6688/0.7053
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8567/0.7696/0.7573/0.7701/0.7632/883
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0378, Acc: 0.8002
+Train/Val/Test loss: 0.4283/0.6663/0.6886
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8563/0.7696/0.7634/0.7701/0.7632/883
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0378, Acc: 0.8015
+Train/Val/Test loss: 0.4277/0.6653/0.6868
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8570/0.7697/0.7635/0.7701/0.7632/883
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0377, Acc: 0.7988
+Train/Val/Test loss: 0.4253/0.6739/0.7133
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8583/0.7684/0.7549/0.7701/0.7632/883
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0370, Acc: 0.8028
+Train/Val/Test loss: 0.4198/0.6664/0.7059
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8598/0.7702/0.7572/0.7701/0.7632/883
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0376, Acc: 0.7994
+Train/Val/Test loss: 0.4200/0.6761/0.7198
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8603/0.7677/0.7531/0.7714/0.7624/1123
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0374, Acc: 0.8027
+Train/Val/Test loss: 0.4261/0.6747/0.7206
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8579/0.7676/0.7528/0.7707/0.7643/1169
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0369, Acc: 0.8057
+Train/Val/Test loss: 0.4244/0.6674/0.6931
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8580/0.7688/0.7627/0.7715/0.7650/1228
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0368, Acc: 0.8057
+Train/Val/Test loss: 0.4064/0.6634/0.6908
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8645/0.7703/0.7614/0.7715/0.7650/1228
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0367, Acc: 0.8057
+Train/Val/Test loss: 0.4103/0.6716/0.7137
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8638/0.7699/0.7553/0.7715/0.7650/1228
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0369, Acc: 0.8035
+Train/Val/Test loss: 0.4090/0.6701/0.6908
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8644/0.7682/0.7618/0.7715/0.7650/1228
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0361, Acc: 0.8096
+Train/Val/Test loss: 0.4090/0.6617/0.6906
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8647/0.7716/0.7623/0.7725/0.7640/1442
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 9/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0355, Acc: 0.8118
+Train/Val/Test loss: 0.4048/0.6651/0.7001
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8650/0.7706/0.7599/0.7725/0.7640/1442
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7724755864290748, Final test acc: 0.7639857621957492
+INFO:root:**************************************************
+INFO:root:Run: 10/10, Epoch: 50/1500, Average epoch time: 0.51
+Loss: 0.0645, Acc: 0.7116
+Train/Val/Test loss: 0.4939/0.8153/0.8825
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8444/0.7355/0.7129/0.7417/0.7284/48
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 100/1500, Average epoch time: 0.51
+Loss: 0.0510, Acc: 0.7562
+Train/Val/Test loss: 0.4549/0.7076/0.7376
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8495/0.7616/0.7527/0.7621/0.7502/96
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 150/1500, Average epoch time: 0.51
+Loss: 0.0484, Acc: 0.7600
+Train/Val/Test loss: 0.4623/0.7112/0.7645
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8455/0.7628/0.7440/0.7629/0.7576/136
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 200/1500, Average epoch time: 0.51
+Loss: 0.0468, Acc: 0.7639
+Train/Val/Test loss: 0.4787/0.7035/0.7129
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8385/0.7615/0.7576/0.7655/0.7573/166
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 250/1500, Average epoch time: 0.51
+Loss: 0.0453, Acc: 0.7688
+Train/Val/Test loss: 0.4801/0.7179/0.7706
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8388/0.7579/0.7386/0.7663/0.7571/247
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 300/1500, Average epoch time: 0.51
+Loss: 0.0444, Acc: 0.7751
+Train/Val/Test loss: 0.4914/0.7017/0.7363
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8351/0.7605/0.7494/0.7665/0.7604/263
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 350/1500, Average epoch time: 0.51
+Loss: 0.0435, Acc: 0.7749
+Train/Val/Test loss: 0.4773/0.6906/0.6970
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8396/0.7636/0.7607/0.7667/0.7626/313
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 400/1500, Average epoch time: 0.51
+Loss: 0.0429, Acc: 0.7766
+Train/Val/Test loss: 0.4697/0.6818/0.7068
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8412/0.7659/0.7572/0.7675/0.7612/390
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 450/1500, Average epoch time: 0.51
+Loss: 0.0426, Acc: 0.7780
+Train/Val/Test loss: 0.4675/0.6793/0.6898
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8426/0.7673/0.7633/0.7677/0.7601/405
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 500/1500, Average epoch time: 0.51
+Loss: 0.0424, Acc: 0.7764
+Train/Val/Test loss: 0.4643/0.6816/0.7247
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8431/0.7671/0.7532/0.7679/0.7630/466
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 550/1500, Average epoch time: 0.51
+Loss: 0.0414, Acc: 0.7829
+Train/Val/Test loss: 0.4547/0.6777/0.7186
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8473/0.7675/0.7541/0.7695/0.7573/502
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 600/1500, Average epoch time: 0.51
+Loss: 0.0402, Acc: 0.7868
+Train/Val/Test loss: 0.4525/0.6742/0.7092
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8488/0.7681/0.7559/0.7694/0.7599/596
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 650/1500, Average epoch time: 0.51
+Loss: 0.0406, Acc: 0.7879
+Train/Val/Test loss: 0.4498/0.6676/0.6909
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8479/0.7707/0.7629/0.7707/0.7629/650
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 700/1500, Average epoch time: 0.51
+Loss: 0.0407, Acc: 0.7858
+Train/Val/Test loss: 0.4516/0.6734/0.6998
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8475/0.7674/0.7596/0.7707/0.7629/650
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 750/1500, Average epoch time: 0.51
+Loss: 0.0400, Acc: 0.7897
+Train/Val/Test loss: 0.4520/0.6766/0.6918
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8457/0.7668/0.7619/0.7707/0.7629/650
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 800/1500, Average epoch time: 0.51
+Loss: 0.0391, Acc: 0.7915
+Train/Val/Test loss: 0.4472/0.6791/0.7183
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8489/0.7677/0.7525/0.7715/0.7631/783
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 850/1500, Average epoch time: 0.51
+Loss: 0.0395, Acc: 0.7898
+Train/Val/Test loss: 0.4433/0.6748/0.6965
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8488/0.7680/0.7597/0.7715/0.7631/783
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 900/1500, Average epoch time: 0.51
+Loss: 0.0385, Acc: 0.7942
+Train/Val/Test loss: 0.4340/0.6661/0.6979
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8541/0.7717/0.7598/0.7715/0.7631/783
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 950/1500, Average epoch time: 0.51
+Loss: 0.0381, Acc: 0.7961
+Train/Val/Test loss: 0.4300/0.6701/0.7039
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8557/0.7704/0.7572/0.7715/0.7631/783
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1000/1500, Average epoch time: 0.51
+Loss: 0.0383, Acc: 0.7976
+Train/Val/Test loss: 0.4385/0.6678/0.6857
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8525/0.7692/0.7634/0.7707/0.7630/967
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1050/1500, Average epoch time: 0.51
+Loss: 0.0377, Acc: 0.8011
+Train/Val/Test loss: 0.4342/0.6680/0.6925
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8537/0.7701/0.7607/0.7712/0.7649/1010
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1100/1500, Average epoch time: 0.51
+Loss: 0.0375, Acc: 0.8007
+Train/Val/Test loss: 0.4237/0.6635/0.6886
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8570/0.7710/0.7624/0.7712/0.7649/1010
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1150/1500, Average epoch time: 0.51
+Loss: 0.0377, Acc: 0.7987
+Train/Val/Test loss: 0.4273/0.6671/0.6878
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8565/0.7704/0.7628/0.7719/0.7646/1142
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1200/1500, Average epoch time: 0.51
+Loss: 0.0376, Acc: 0.8015
+Train/Val/Test loss: 0.4342/0.6847/0.7374
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8543/0.7640/0.7465/0.7719/0.7646/1142
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1250/1500, Average epoch time: 0.51
+Loss: 0.0375, Acc: 0.8016
+Train/Val/Test loss: 0.4212/0.6643/0.6969
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8590/0.7711/0.7601/0.7719/0.7646/1142
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1300/1500, Average epoch time: 0.51
+Loss: 0.0365, Acc: 0.8071
+Train/Val/Test loss: 0.4160/0.6597/0.6888
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8610/0.7724/0.7623/0.7724/0.7623/1300
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1350/1500, Average epoch time: 0.51
+Loss: 0.0372, Acc: 0.8036
+Train/Val/Test loss: 0.4175/0.6695/0.6982
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8609/0.7697/0.7592/0.7729/0.7630/1304
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1400/1500, Average epoch time: 0.51
+Loss: 0.0370, Acc: 0.8034
+Train/Val/Test loss: 0.4100/0.6650/0.6835
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8632/0.7701/0.7632/0.7729/0.7630/1304
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1450/1500, Average epoch time: 0.51
+Loss: 0.0367, Acc: 0.8071
+Train/Val/Test loss: 0.4123/0.6633/0.6930
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8618/0.7720/0.7611/0.7729/0.7630/1304
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:Run: 10/10, Epoch: 1500/1500, Average epoch time: 0.51
+Loss: 0.0362, Acc: 0.8092
+Train/Val/Test loss: 0.4098/0.6633/0.6941
+Train/Val/Test/Best val/Final test acc/Best epoch: 0.8627/0.7718/0.7611/0.7729/0.7630/1304
+
+INFO:root:Peak memuse 10.72 G
+INFO:root:**************************************************
+INFO:root:Best val acc: 0.7729118426792846, Final test acc: 0.7629775939756805
+INFO:root:**************************************************
+INFO:root:Namespace(cpu=False, gpu=0, seed=0, n_runs=10, n_epochs=1500, use_labels=True, n_label_iters=1, mask_rate=0.5, no_attn_dst=True, use_norm=True, lr=0.002, n_layers=3, n_heads=3, n_hidden=256, dropout=0.8, hid_drop=0.8, input_drop=0.45, attn_drop=0.0, edge_drop=0.6, wd=0, log_every=50, save_pred=False, save='log/./kd/L3-H256-moe_True-ngnn_True/L3-H256-moe_True-ngnn_True-20220805-222544-d8ac1a68-db48-4ae1-bc20-620d1f2b06be', backbone='drgat', kd_dir='./kd/L3-H256-moe_True-ngnn_True', mode='student', alpha=0.95, temp=0.7, data_root_dir='./dataset/', pretrain_path='./dataset/ogbn-arxiv-pretrain/X.all.xrt-emb.npy', num_expert=4, top_k=1, no_teacher_moe=False, moe_widget=['ngnn'], expert_drop=0.15, gate='naive', moe_alpha=0.0)
+INFO:root:Runned 10 times
+INFO:root:Val Accs 800:
+INFO:root:[0.7715359575824692, 0.769623141716165, 0.7709319104667942, 0.7694889090237927, 0.7695560253699789, 0.7699587234470956, 0.7710661431591664, 0.7694889090237927, 0.7710661431591664, 0.7715023994093761]
+INFO:root:Val Accs 1000:
+INFO:root:[0.7699587234470956, 0.7702607470049331, 0.770831235947515, 0.7699587234470956, 0.7705292123896775, 0.7706634450820498, 0.7703614215242123, 0.7699251652740025, 0.7701265143125609, 0.7706634450820498]
+INFO:root:Val Accs 1200:
+INFO:root:[0.770864794120608, 0.7717373066210276, 0.7716366321017484, 0.7709319104667942, 0.7709990268129803, 0.7701600724856539, 0.7698244907547234, 0.7701265143125609, 0.7707305614282358, 0.7719050974864928]
+INFO:root:Val Accs 1400:
+INFO:root:[0.770864794120608, 0.7714688412362831, 0.7709319104667942, 0.7703949796973053, 0.7713681667170039, 0.7715023994093761, 0.7698580489278164, 0.7710997013322595, 0.7714688412362831, 0.7729118426792846]
+INFO:root:Val Accs 1600:
+INFO:root:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Val Accs 1800:
+INFO:root:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Val Accs:
+INFO:root:[0.7709319104667942, 0.7718044229672136, 0.7720393301788651, 0.7703949796973053, 0.7707305614282358, 0.7711668176784456, 0.7714352830631901, 0.7710997013322595, 0.7724755864290748, 0.7729118426792846]
+INFO:root:Test Accs 800:
+INFO:root:[0.7610229821204453, 0.7622780486801226, 0.7604468859946917, 0.7579161780137028, 0.7620928749254161, 0.7660020986358866, 0.763882887887579, 0.7622368989568545, 0.7612493055984199, 0.763142192868753]
+INFO:root:Test Accs 1000:
+INFO:root:[0.761640227969467, 0.7635948398247022, 0.7620723000637821, 0.7604674608563258, 0.7614344793531264, 0.7644589840133326, 0.7593975680513548, 0.761681377692735, 0.7632039174536551, 0.7630187436989486]
+INFO:root:Test Accs 1200:
+INFO:root:[0.7639034627492131, 0.7651173795856223, 0.7606526346110323, 0.7624632224348291, 0.7644178342900644, 0.7634096660699957, 0.7610641318437134, 0.7634919655165319, 0.7642738102586261, 0.764644157768039]
+INFO:root:Test Accs 1400:
+INFO:root:[0.7639034627492131, 0.7638623130259449, 0.7619694257556118, 0.763183342592021, 0.7639034627492131, 0.7638623130259449, 0.7612287307367858, 0.7614962039380285, 0.765014505277452, 0.7629775939756805]
+INFO:root:Test Accs 1600:
+INFO:root:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Test Accs 1800:
+INFO:root:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+INFO:root:Test Accs:
+INFO:root:[0.7626278213279015, 0.7631216180071189, 0.7625043721580972, 0.763183342592021, 0.7631010431454849, 0.7613933296298583, 0.7607555089192025, 0.7614962039380285, 0.7639857621957492, 0.7629775939756805]
+INFO:root:Average val accuracy: 77.15 ± 0.08
+INFO:root:Average test accuracy 600: 76.03 ± 0.21
+INFO:root:Average test accuracy 800: 76.20 ± 0.20
+INFO:root:Average test accuracy 1000: 76.21 ± 0.14
+INFO:root:Average test accuracy 1200: 76.33 ± 0.14
+INFO:root:Average test accuracy 1400: 76.31 ± 0.12
+INFO:root:Average test accuracy 1600: 0.00 ± 0.00
+INFO:root:Average test accuracy 1800: 0.00 ± 0.00
+INFO:root:Average test accuracy: 76.25 ± 0.09
+INFO:root:Number of params: 5050971
+Namespace(cpu=False, gpu=0, seed=0, n_runs=10, n_epochs=1500, use_labels=True, n_label_iters=1, mask_rate=0.5, no_attn_dst=True, use_norm=True, lr=0.002, n_layers=3, n_heads=3, n_hidden=256, dropout=0.8, hid_drop=0.8, input_drop=0.45, attn_drop=0.0, edge_drop=0.6, wd=0, log_every=50, save_pred=False, save='kd', backbone='drgat', kd_dir='./kd', mode='student', alpha=0.95, temp=0.7, data_root_dir='./dataset/', pretrain_path='./dataset/ogbn-arxiv-pretrain/X.all.xrt-emb.npy', num_expert=4, top_k=1, no_teacher_moe=False, moe_widget=['ngnn'], expert_drop=0.15, gate='naive', moe_alpha=0.0)
+Pretrained node feature loaded! Path: ./dataset/ogbn-arxiv-pretrain/X.all.xrt-emb.npy
+Total edges before adding self-loop 2315598
+Total edges after adding self-loop 2484941
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run1.pt
+teacher test acc: 0.7618665514474415
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run2.pt
+teacher test acc: 0.7613727547682242
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run3.pt
+teacher test acc: 0.7591300948501122
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run4.pt
+teacher test acc: 0.7608995329506409
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run5.pt
+teacher test acc: 0.7605909100261301
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run6.pt
+teacher test acc: 0.7605497603028619
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run7.pt
+teacher test acc: 0.7584099746929202
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run8.pt
+teacher test acc: 0.7592535440199165
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run9.pt
+teacher test acc: 0.7628335699442421
+././kd/L3-H256-moe_True-ngnn_True/best_pred_run10.pt
+teacher test acc: 0.7585334238627245
+

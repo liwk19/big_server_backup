@@ -1,0 +1,29 @@
+Loading G...
+Loading features...
+Loading class_map...
+cuda:0 pretrained/374b697e75564f40acb6caeda3f9ca30.pt
+parameter number: 12299413
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Peak memuse 0.59 G
+Epoch:0100 train loss:0.367 | val loss:0.348 f1:73.885 best f1:75.007 Average epoch time: 6.59
+Epoch:0200 train loss:0.310 | val loss:0.310 f1:78.928 best f1:79.354 Average epoch time: 5.20
+Epoch:0300 train loss:0.266 | val loss:0.279 f1:82.266 best f1:82.251 Average epoch time: 4.88
+Epoch:0400 train loss:0.240 | val loss:0.261 f1:83.801 best f1:84.194 Average epoch time: 4.77
+Traceback (most recent call last):
+  File "ppi.py", line 205, in <module>
+    loss_tra = train(label_weight)
+  File "ppi.py", line 133, in train
+    loss_train.backward() 
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/torch/autograd/__init__.py", line 147, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+KeyboardInterrupt

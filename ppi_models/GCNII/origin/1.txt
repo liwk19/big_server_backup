@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "ppi.py", line 11, in <module>
+    from utils import *
+  File "/data/liweikai/GCNII/origin/utils.py", line 7, in <module>
+    import networkx as nx
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/networkx/__init__.py", line 114, in <module>
+    import networkx.generators
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/networkx/generators/__init__.py", line 14, in <module>
+    from networkx.generators.intersection import *
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/networkx/generators/intersection.py", line 13, in <module>
+    from networkx.algorithms import bipartite
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/networkx/algorithms/__init__.py", line 5, in <module>
+    from networkx.algorithms.centrality import *
+  File "/home/cenyukuo/anaconda3/envs/gcnii_ppi/lib/python3.6/site-packages/networkx/algorithms/centrality/__init__.py", line 6, in <module>
+    from .current_flow_betweenness import *
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 779, in get_code
+  File "<frozen importlib._bootstrap_external>", line 487, in _compile_bytecode
+KeyboardInterrupt

@@ -1,0 +1,73 @@
+Using backend: pytorch
+WARNING:root:The OGB package is out of date. Your version is 1.2.5, while the latest version is 1.3.3.
+Namespace(seed=2, dataset='ogbn-mag', gpu=0, root='../data/', emb_path='../data/', stages=[400, 400, 400, 400], extra_embedding='complex', embed_size=256, num_hops=2, label_feats=True, num_label_hops=2, hidden=512, dropout=0.5, n_layers_1=2, n_layers_2=2, n_layers_3=4, input_drop=0.1, att_drop=0.0, label_drop=0.0, residual=True, act='leaky_relu', bns=True, label_bns=True, amp=True, lr=0.0005, weight_decay=0.0, eval_every=1, batch_size=10000, patience=100, threshold=0.75, gama=10.0, start_stage=0, reload='', moving_k=1, store_model=False, moe_widget=['feat_ngnn', 'label_ngnn'], num_expert=4, top_k=1, expert_drop=0.0, gate='naive')
+Use extra embeddings generated with the complex method
+Current num hops = 2
+./output/ogbn-mag/032bcae82a2848158987d3717dff49e2 
+
+Stage 0 
+
+Current num label hops = 2
+# Params: 9423907
+Epoch:20, avg epoch time:15.5945
+ Train loss:1.6823572469136072, Val loss:1.6751960515975952, Test loss:1.7036656141281128
+ Train acc:54.4007, Val acc:52.7582, Test acc:51.3842
+Best Epoch 19,Val 52.7582, Test 51.3842
+
+Epoch:40, avg epoch time:16.5686
+ Train loss:1.5374247516904558, Val loss:1.6005804538726807, Test loss:1.637072205543518
+ Train acc:56.8644, Val acc:53.7585, Test acc:52.3260
+Best Epoch 38,Val 53.8541, Test 52.4428
+
+Epoch:60, avg epoch time:17.5090
+ Train loss:1.463392182001992, Val loss:1.5923500061035156, Test loss:1.630924105644226
+ Train acc:58.2255, Val acc:53.5566, Test acc:52.3212
+Best Epoch 53,Val 54.5446, Test 53.1415
+
+Epoch:80, avg epoch time:18.1698
+ Train loss:1.4112869993088737, Val loss:1.5621635913848877, Test loss:1.6043879985809326
+ Train acc:59.2843, Val acc:54.3735, Test acc:52.7886
+Best Epoch 62,Val 54.6987, Test 53.4705
+
+Epoch:100, avg epoch time:18.5263
+ Train loss:1.3745690622026958, Val loss:1.5541176795959473, Test loss:1.5962053537368774
+ Train acc:59.9345, Val acc:54.6386, Test acc:53.1129
+Best Epoch 62,Val 54.6987, Test 53.4705
+
+Epoch:120, avg epoch time:18.9013
+ Train loss:1.3455516818969968, Val loss:1.560308814048767, Test loss:1.599792242050171
+ Train acc:60.5245, Val acc:54.3720, Test acc:52.7337
+Best Epoch 117,Val 54.9392, Test 53.3227
+
+Epoch:140, avg epoch time:19.2119
+ Train loss:1.321750245397053, Val loss:1.554714560508728, Test loss:1.5947835445404053
+ Train acc:60.9998, Val acc:54.3704, Test acc:52.8148
+Best Epoch 117,Val 54.9392, Test 53.3227
+
+Epoch:160, avg epoch time:19.3569
+ Train loss:1.3022416186711145, Val loss:1.5523391962051392, Test loss:1.5924171209335327
+ Train acc:61.4928, Val acc:54.4213, Test acc:52.8577
+Best Epoch 155,Val 55.0980, Test 53.5754
+
+Epoch:180, avg epoch time:19.5090
+ Train loss:1.2829846200488864, Val loss:1.538788914680481, Test loss:1.5775855779647827
+ Train acc:61.8728, Val acc:54.9068, Test acc:53.3847
+Best Epoch 161,Val 55.1981, Test 53.5063
+
+Epoch:200, avg epoch time:19.6890
+ Train loss:1.2683757335420638, Val loss:1.5255192518234253, Test loss:1.5642848014831543
+ Train acc:62.2452, Val acc:55.3554, Test acc:53.7400
+Best Epoch 199,Val 55.3554, Test 53.7400
+
+Traceback (most recent call last):
+  File "/data/liweikai/sehgnn/large/main.py", line 407, in <module>
+    main(args)
+  File "/data/liweikai/sehgnn/large/main.py", line 265, in main
+    loss_train, train_acc = train(model, train_loader, loss_fcn, optimizer, evaluator, device, feats, label_feats, labels_cuda, label_emb, scalar=scalar)
+  File "/data/liweikai/sehgnn/large/utils.py", line 155, in train
+    scalar.scale(loss_train).backward()
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt

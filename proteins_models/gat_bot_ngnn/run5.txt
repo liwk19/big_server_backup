@@ -1,0 +1,438 @@
+Using backend: pytorch
+wandb: Currently logged in as: billywkli. Use `wandb login --relogin` to force relogin
+device cuda:0
+Loading data
+Graph(num_nodes=132534, num_edges=79122504,
+      ndata_schemes={'species': Scheme(shape=(1,), dtype=torch.int64), 'labels': Scheme(shape=(112,), dtype=torch.int64)}
+      edata_schemes={'feat': Scheme(shape=(8,), dtype=torch.float32)})
+wandb: wandb version 0.12.17 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.16
+wandb: Run data is saved locally in /home/liweikai/gat_bot_ngnn/wandb/run-20220604_071552-2ddautly
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run icy-armadillo-219
+wandb: ⭐️ View project at https://wandb.ai/billywkli/GAT_BOT_NGNN_proteins
+wandb: 🚀 View run at https://wandb.ai/billywkli/GAT_BOT_NGNN_proteins/runs/2ddautly
+Running 0
+201283548 params
+preprocess
+Graph(num_nodes=132534, num_edges=79122504,
+      ndata_schemes={'species': Scheme(shape=(1,), dtype=torch.int64), 'labels': Scheme(shape=(112,), dtype=torch.int64), 'feat': Scheme(shape=(8,), dtype=torch.float32), 'train_labels_onehot': Scheme(shape=(112,), dtype=torch.int64), 'deg': Scheme(shape=(), dtype=torch.float32)}
+      edata_schemes={'feat': Scheme(shape=(8,), dtype=torch.float32)})
+Epoch: 20/1800, Average epoch time: 20.98s, Loss: 0.2239
+Train/Val/Test loss: 0.2728/0.4276/0.3698
+Train/Val/Test/Best val/Final test score: 0.8662/0.8106/0.7616/0.8106/0.7616
+
+Epoch: 40/1800, Average epoch time: 21.01s, Loss: 0.2010
+Train/Val/Test loss: 0.2401/0.3690/0.3838
+Train/Val/Test/Best val/Final test score: 0.9056/0.8524/0.7960/0.8558/0.8109
+
+Epoch: 60/1800, Average epoch time: 20.93s, Loss: 0.1899
+Train/Val/Test loss: 0.1900/0.3057/0.3292
+Train/Val/Test/Best val/Final test score: 0.9293/0.8791/0.8306/0.8791/0.8306
+
+Epoch: 80/1800, Average epoch time: 20.91s, Loss: 0.1800
+Train/Val/Test loss: 0.1868/0.3288/0.3508
+Train/Val/Test/Best val/Final test score: 0.9349/0.8794/0.8325/0.8841/0.8386
+
+Epoch: 100/1800, Average epoch time: 20.89s, Loss: 0.1721
+Train/Val/Test loss: 0.2120/0.3756/0.4070
+Train/Val/Test/Best val/Final test score: 0.9324/0.8709/0.8234/0.8921/0.8432
+
+Epoch: 120/1800, Average epoch time: 20.86s, Loss: 0.1657
+Train/Val/Test loss: 0.1549/0.3020/0.3473
+Train/Val/Test/Best val/Final test score: 0.9521/0.8979/0.8555/0.8979/0.8555
+
+Epoch: 140/1800, Average epoch time: 20.90s, Loss: 0.1605
+Train/Val/Test loss: 0.1571/0.3132/0.3489
+Train/Val/Test/Best val/Final test score: 0.9522/0.8934/0.8511/0.9027/0.8595
+
+Epoch: 160/1800, Average epoch time: 20.91s, Loss: 0.1546
+Train/Val/Test loss: 0.1536/0.3150/0.3600
+Train/Val/Test/Best val/Final test score: 0.9559/0.8975/0.8531/0.9027/0.8595
+
+Epoch: 180/1800, Average epoch time: 20.90s, Loss: 0.1497
+Train/Val/Test loss: 0.1344/0.2966/0.3719
+Train/Val/Test/Best val/Final test score: 0.9628/0.9040/0.8595/0.9078/0.8623
+
+Epoch: 200/1800, Average epoch time: 20.91s, Loss: 0.1448
+Train/Val/Test loss: 0.1309/0.2890/0.3796
+Train/Val/Test/Best val/Final test score: 0.9658/0.9086/0.8626/0.9086/0.8626
+
+preprocess
+Graph(num_nodes=132534, num_edges=79122504,
+      ndata_schemes={'species': Scheme(shape=(1,), dtype=torch.int64), 'labels': Scheme(shape=(112,), dtype=torch.int64), 'feat': Scheme(shape=(8,), dtype=torch.float32), 'train_labels_onehot': Scheme(shape=(112,), dtype=torch.int64), 'deg': Scheme(shape=(), dtype=torch.float32)}
+      edata_schemes={'feat': Scheme(shape=(8,), dtype=torch.float32)})
+Epoch: 220/1800, Average epoch time: 20.72s, Loss: 0.1409
+Train/Val/Test loss: 0.1373/0.3124/0.4053
+Train/Val/Test/Best val/Final test score: 0.9662/0.9062/0.8600/0.9110/0.8653
+
+Epoch: 240/1800, Average epoch time: 20.79s, Loss: 0.1359
+Train/Val/Test loss: 0.1167/0.2900/0.3989
+Train/Val/Test/Best val/Final test score: 0.9720/0.9138/0.8655/0.9138/0.8655
+
+Epoch: 260/1800, Average epoch time: 20.80s, Loss: 0.1330
+Train/Val/Test loss: 0.1118/0.3079/0.4059
+Train/Val/Test/Best val/Final test score: 0.9739/0.9136/0.8684/0.9144/0.8670
+
+Epoch: 280/1800, Average epoch time: 20.79s, Loss: 0.1289
+Train/Val/Test loss: 0.1032/0.2929/0.4095
+Train/Val/Test/Best val/Final test score: 0.9771/0.9185/0.8718/0.9185/0.8718
+
+Epoch: 300/1800, Average epoch time: 20.78s, Loss: 0.1267
+Train/Val/Test loss: 0.1047/0.3001/0.4169
+Train/Val/Test/Best val/Final test score: 0.9766/0.9171/0.8679/0.9185/0.8718
+
+Epoch: 320/1800, Average epoch time: 20.80s, Loss: 0.1235
+Train/Val/Test loss: 0.0989/0.3093/0.3789
+Train/Val/Test/Best val/Final test score: 0.9787/0.9164/0.8684/0.9211/0.8729
+
+Epoch: 340/1800, Average epoch time: 20.80s, Loss: 0.1211
+Train/Val/Test loss: 0.0999/0.3122/0.4381
+Train/Val/Test/Best val/Final test score: 0.9792/0.9184/0.8707/0.9215/0.8721
+
+Epoch: 360/1800, Average epoch time: 20.80s, Loss: 0.1183
+Train/Val/Test loss: 0.0921/0.2943/0.4078
+Train/Val/Test/Best val/Final test score: 0.9812/0.9224/0.8719/0.9224/0.8719
+
+Epoch: 380/1800, Average epoch time: 20.80s, Loss: 0.1162
+Train/Val/Test loss: 0.0927/0.2960/0.4508
+Train/Val/Test/Best val/Final test score: 0.9815/0.9227/0.8735/0.9234/0.8743
+
+Epoch: 400/1800, Average epoch time: 20.81s, Loss: 0.1140
+Train/Val/Test loss: 0.0898/0.3062/0.4798
+Train/Val/Test/Best val/Final test score: 0.9830/0.9251/0.8758/0.9251/0.8758
+
+preprocess
+Graph(num_nodes=132534, num_edges=79122504,
+      ndata_schemes={'species': Scheme(shape=(1,), dtype=torch.int64), 'labels': Scheme(shape=(112,), dtype=torch.int64), 'feat': Scheme(shape=(8,), dtype=torch.float32), 'train_labels_onehot': Scheme(shape=(112,), dtype=torch.int64), 'deg': Scheme(shape=(), dtype=torch.float32)}
+      edata_schemes={'feat': Scheme(shape=(8,), dtype=torch.float32)})
+Epoch: 420/1800, Average epoch time: 20.94s, Loss: 0.1125
+Train/Val/Test loss: 0.0869/0.2946/0.4680
+Train/Val/Test/Best val/Final test score: 0.9840/0.9259/0.8769/0.9259/0.8769
+
+Epoch: 440/1800, Average epoch time: 20.95s, Loss: 0.1105
+Train/Val/Test loss: 0.0857/0.2993/0.4900
+Train/Val/Test/Best val/Final test score: 0.9840/0.9265/0.8762/0.9287/0.8777
+
+Epoch: 460/1800, Average epoch time: 20.86s, Loss: 0.1085
+Train/Val/Test loss: 0.0816/0.2896/0.4937
+Train/Val/Test/Best val/Final test score: 0.9852/0.9287/0.8761/0.9287/0.8777
+
+Epoch: 480/1800, Average epoch time: 20.85s, Loss: 0.1056
+Train/Val/Test loss: 0.0788/0.3027/0.4678
+Train/Val/Test/Best val/Final test score: 0.9860/0.9283/0.8750/0.9287/0.8777
+
+Epoch   486: reducing learning rate of group 0 to 2.2500e-03.
+Epoch: 500/1800, Average epoch time: 20.84s, Loss: 0.1009
+Train/Val/Test loss: 0.0749/0.3034/0.4976
+Train/Val/Test/Best val/Final test score: 0.9874/0.9296/0.8786/0.9296/0.8771
+
+Epoch: 520/1800, Average epoch time: 20.82s, Loss: 0.0994
+Train/Val/Test loss: 0.0733/0.3104/0.5186
+Train/Val/Test/Best val/Final test score: 0.9879/0.9306/0.8759/0.9306/0.8759
+
+Epoch: 540/1800, Average epoch time: 20.79s, Loss: 0.0986
+Train/Val/Test loss: 0.0730/0.3261/0.5232
+Train/Val/Test/Best val/Final test score: 0.9878/0.9290/0.8754/0.9317/0.8779
+
+Epoch: 560/1800, Average epoch time: 20.79s, Loss: 0.0964
+Train/Val/Test loss: 0.0708/0.3150/0.5555
+Train/Val/Test/Best val/Final test score: 0.9887/0.9315/0.8777/0.9317/0.8779
+
+Epoch: 580/1800, Average epoch time: 20.78s, Loss: 0.0949
+Train/Val/Test loss: 0.0704/0.3077/0.5683
+Train/Val/Test/Best val/Final test score: 0.9890/0.9322/0.8771/0.9322/0.8771
+
+Epoch: 600/1800, Average epoch time: 20.79s, Loss: 0.0950
+Train/Val/Test loss: 0.0686/0.3135/0.5737
+Train/Val/Test/Best val/Final test score: 0.9893/0.9325/0.8768/0.9325/0.8768
+
+preprocess
+Graph(num_nodes=132534, num_edges=79122504,
+      ndata_schemes={'species': Scheme(shape=(1,), dtype=torch.int64), 'labels': Scheme(shape=(112,), dtype=torch.int64), 'feat': Scheme(shape=(8,), dtype=torch.float32), 'train_labels_onehot': Scheme(shape=(112,), dtype=torch.int64), 'deg': Scheme(shape=(), dtype=torch.float32)}
+      edata_schemes={'feat': Scheme(shape=(8,), dtype=torch.float32)})
+Epoch: 620/1800, Average epoch time: 20.68s, Loss: 0.0933
+Train/Val/Test loss: 0.0662/0.3137/0.5249
+Train/Val/Test/Best val/Final test score: 0.9897/0.9322/0.8736/0.9328/0.8753
+
+Epoch: 640/1800, Average epoch time: 20.75s, Loss: 0.0914
+Train/Val/Test loss: 0.0664/0.3185/0.5972
+Train/Val/Test/Best val/Final test score: 0.9901/0.9343/0.8798/0.9343/0.8798
+
+Epoch: 660/1800, Average epoch time: 20.80s, Loss: 0.0906
+Train/Val/Test loss: 0.0643/0.3207/0.5442
+Train/Val/Test/Best val/Final test score: 0.9903/0.9318/0.8764/0.9343/0.8798
+
+Epoch: 680/1800, Average epoch time: 20.79s, Loss: 0.0899
+Train/Val/Test loss: 0.0651/0.3268/0.6076
+Train/Val/Test/Best val/Final test score: 0.9904/0.9327/0.8796/0.9343/0.8798
+
+Epoch: 700/1800, Average epoch time: 20.80s, Loss: 0.0886
+Train/Val/Test loss: 0.0637/0.3109/0.5889
+Train/Val/Test/Best val/Final test score: 0.9907/0.9351/0.8806/0.9351/0.8806
+
+Epoch: 720/1800, Average epoch time: 20.80s, Loss: 0.0879
+Train/Val/Test loss: 0.0622/0.3131/0.6312
+Train/Val/Test/Best val/Final test score: 0.9910/0.9362/0.8789/0.9362/0.8789
+
+Epoch: 740/1800, Average epoch time: 20.81s, Loss: 0.0867
+Train/Val/Test loss: 0.0628/0.3256/0.6048
+Train/Val/Test/Best val/Final test score: 0.9911/0.9359/0.8797/0.9362/0.8789
+
+Epoch: 760/1800, Average epoch time: 20.79s, Loss: 0.0854
+Train/Val/Test loss: 0.0612/0.3185/0.6206
+Train/Val/Test/Best val/Final test score: 0.9913/0.9353/0.8783/0.9362/0.8789
+
+Epoch   771: reducing learning rate of group 0 to 1.6875e-03.
+Epoch: 780/1800, Average epoch time: 20.78s, Loss: 0.0822
+Train/Val/Test loss: 0.0582/0.3233/0.6088
+Train/Val/Test/Best val/Final test score: 0.9920/0.9339/0.8787/0.9365/0.8798
+
+Epoch: 800/1800, Average epoch time: 20.79s, Loss: 0.0817
+Train/Val/Test loss: 0.0581/0.3177/0.6718
+Train/Val/Test/Best val/Final test score: 0.9921/0.9378/0.8801/0.9378/0.8801
+
+preprocess
+Graph(num_nodes=132534, num_edges=79122504,
+      ndata_schemes={'species': Scheme(shape=(1,), dtype=torch.int64), 'labels': Scheme(shape=(112,), dtype=torch.int64), 'feat': Scheme(shape=(8,), dtype=torch.float32), 'train_labels_onehot': Scheme(shape=(112,), dtype=torch.int64), 'deg': Scheme(shape=(), dtype=torch.float32)}
+      edata_schemes={'feat': Scheme(shape=(8,), dtype=torch.float32)})
+Epoch: 820/1800, Average epoch time: 20.58s, Loss: 0.0800
+Train/Val/Test loss: 0.0569/0.3249/0.6394
+Train/Val/Test/Best val/Final test score: 0.9924/0.9372/0.8803/0.9379/0.8812
+
+Epoch: 840/1800, Average epoch time: 20.64s, Loss: 0.0800
+Train/Val/Test loss: 0.0583/0.3350/0.6930
+Train/Val/Test/Best val/Final test score: 0.9923/0.9372/0.8797/0.9380/0.8809
+
+Epoch: 860/1800, Average epoch time: 20.66s, Loss: 0.0788
+Train/Val/Test loss: 0.0562/0.3244/0.6805
+Train/Val/Test/Best val/Final test score: 0.9927/0.9377/0.8805/0.9382/0.8808
+
+Epoch: 880/1800, Average epoch time: 20.69s, Loss: 0.0781
+Train/Val/Test loss: 0.0548/0.3230/0.6722
+Train/Val/Test/Best val/Final test score: 0.9930/0.9383/0.8788/0.9383/0.8788
+
+Epoch: 900/1800, Average epoch time: 20.69s, Loss: 0.0770
+Train/Val/Test loss: 0.0542/0.3203/0.6285
+Train/Val/Test/Best val/Final test score: 0.9930/0.9374/0.8788/0.9383/0.8788
+
+Epoch: 920/1800, Average epoch time: 20.68s, Loss: 0.0763
+Train/Val/Test loss: 0.0533/0.3317/0.6913
+Train/Val/Test/Best val/Final test score: 0.9933/0.9374/0.8786/0.9392/0.8797
+
+Epoch: 940/1800, Average epoch time: 20.70s, Loss: 0.0764
+Train/Val/Test loss: 0.0526/0.3221/0.6571
+Train/Val/Test/Best val/Final test score: 0.9934/0.9384/0.8798/0.9392/0.8797
+
+Epoch: 960/1800, Average epoch time: 20.73s, Loss: 0.0754
+Train/Val/Test loss: 0.0522/0.3267/0.6772
+Train/Val/Test/Best val/Final test score: 0.9935/0.9389/0.8815/0.9392/0.8797
+
+Epoch   966: reducing learning rate of group 0 to 1.2656e-03.
+Epoch: 980/1800, Average epoch time: 20.74s, Loss: 0.0735
+Train/Val/Test loss: 0.0520/0.3329/0.7181
+Train/Val/Test/Best val/Final test score: 0.9936/0.9397/0.8801/0.9397/0.8801
+
+Epoch: 1000/1800, Average epoch time: 20.75s, Loss: 0.0728
+Train/Val/Test loss: 0.0503/0.3396/0.6931
+Train/Val/Test/Best val/Final test score: 0.9939/0.9385/0.8793/0.9397/0.8801
+
+Epoch: 1020/1800, Average epoch time: 20.74s, Loss: 0.0713
+Train/Val/Test loss: 0.0503/0.3442/0.7221
+Train/Val/Test/Best val/Final test score: 0.9940/0.9391/0.8802/0.9397/0.8801
+
+Epoch  1031: reducing learning rate of group 0 to 9.4922e-04.
+Epoch: 1040/1800, Average epoch time: 20.74s, Loss: 0.0700
+Train/Val/Test loss: 0.0495/0.3411/0.7742
+Train/Val/Test/Best val/Final test score: 0.9943/0.9409/0.8804/0.9409/0.8804
+
+Epoch: 1060/1800, Average epoch time: 20.75s, Loss: 0.0692
+Train/Val/Test loss: 0.0480/0.3480/0.7341
+Train/Val/Test/Best val/Final test score: 0.9944/0.9398/0.8795/0.9409/0.8804
+
+Epoch: 1080/1800, Average epoch time: 20.75s, Loss: 0.0691
+Train/Val/Test loss: 0.0477/0.3493/0.7328
+Train/Val/Test/Best val/Final test score: 0.9946/0.9381/0.8804/0.9409/0.8804
+
+Epoch  1091: reducing learning rate of group 0 to 7.1191e-04.
+Epoch: 1100/1800, Average epoch time: 20.75s, Loss: 0.0676
+Train/Val/Test loss: 0.0471/0.3427/0.7654
+Train/Val/Test/Best val/Final test score: 0.9946/0.9408/0.8814/0.9409/0.8804
+
+Epoch: 1120/1800, Average epoch time: 20.74s, Loss: 0.0669
+Train/Val/Test loss: 0.0464/0.3420/0.7588
+Train/Val/Test/Best val/Final test score: 0.9948/0.9404/0.8821/0.9409/0.8804
+
+Epoch: 1140/1800, Average epoch time: 20.74s, Loss: 0.0663
+Train/Val/Test loss: 0.0460/0.3579/0.7794
+Train/Val/Test/Best val/Final test score: 0.9949/0.9404/0.8818/0.9409/0.8804
+
+Epoch  1142: reducing learning rate of group 0 to 5.3394e-04.
+Epoch: 1160/1800, Average epoch time: 20.75s, Loss: 0.0653
+Train/Val/Test loss: 0.0451/0.3535/0.7884
+Train/Val/Test/Best val/Final test score: 0.9951/0.9416/0.8809/0.9416/0.8809
+
+Epoch: 1180/1800, Average epoch time: 20.75s, Loss: 0.0654
+Train/Val/Test loss: 0.0449/0.3598/0.7791
+Train/Val/Test/Best val/Final test score: 0.9951/0.9407/0.8810/0.9416/0.8809
+
+Epoch: 1200/1800, Average epoch time: 20.75s, Loss: 0.0651
+Train/Val/Test loss: 0.0447/0.3582/0.7887
+Train/Val/Test/Best val/Final test score: 0.9951/0.9409/0.8820/0.9416/0.8809
+
+Epoch  1211: reducing learning rate of group 0 to 4.0045e-04.
+Epoch: 1220/1800, Average epoch time: 20.75s, Loss: 0.0642
+Train/Val/Test loss: 0.0438/0.3624/0.7907
+Train/Val/Test/Best val/Final test score: 0.9953/0.9416/0.8819/0.9416/0.8825
+
+Epoch: 1240/1800, Average epoch time: 20.76s, Loss: 0.0636
+Train/Val/Test loss: 0.0437/0.3534/0.7986
+Train/Val/Test/Best val/Final test score: 0.9953/0.9415/0.8827/0.9422/0.8824
+
+Epoch: 1260/1800, Average epoch time: 20.75s, Loss: 0.0631
+Train/Val/Test loss: 0.0439/0.3531/0.8227
+Train/Val/Test/Best val/Final test score: 0.9954/0.9420/0.8823/0.9422/0.8824
+
+Epoch: 1280/1800, Average epoch time: 20.75s, Loss: 0.0632
+Train/Val/Test loss: 0.0436/0.3542/0.8258
+Train/Val/Test/Best val/Final test score: 0.9954/0.9426/0.8826/0.9426/0.8826
+
+Epoch: 1300/1800, Average epoch time: 20.75s, Loss: 0.0631
+Train/Val/Test loss: 0.0429/0.3580/0.8131
+Train/Val/Test/Best val/Final test score: 0.9955/0.9420/0.8828/0.9428/0.8829
+
+Epoch: 1320/1800, Average epoch time: 20.76s, Loss: 0.0623
+Train/Val/Test loss: 0.0432/0.3567/0.8079
+Train/Val/Test/Best val/Final test score: 0.9955/0.9418/0.8817/0.9428/0.8829
+
+Epoch: 1340/1800, Average epoch time: 20.76s, Loss: 0.0626
+Train/Val/Test loss: 0.0427/0.3661/0.8085
+Train/Val/Test/Best val/Final test score: 0.9956/0.9408/0.8800/0.9428/0.8829
+
+Epoch  1341: reducing learning rate of group 0 to 3.0034e-04.
+Epoch: 1360/1800, Average epoch time: 20.76s, Loss: 0.0617
+Train/Val/Test loss: 0.0424/0.3660/0.8248
+Train/Val/Test/Best val/Final test score: 0.9956/0.9417/0.8812/0.9428/0.8829
+
+Epoch: 1380/1800, Average epoch time: 20.76s, Loss: 0.0618
+Train/Val/Test loss: 0.0423/0.3673/0.8321
+Train/Val/Test/Best val/Final test score: 0.9957/0.9413/0.8807/0.9428/0.8829
+
+Epoch  1392: reducing learning rate of group 0 to 2.2525e-04.
+Epoch: 1400/1800, Average epoch time: 20.76s, Loss: 0.0613
+Train/Val/Test loss: 0.0420/0.3619/0.8258
+Train/Val/Test/Best val/Final test score: 0.9957/0.9419/0.8810/0.9428/0.8829
+
+Epoch: 1420/1800, Average epoch time: 20.76s, Loss: 0.0613
+Train/Val/Test loss: 0.0418/0.3640/0.8448
+Train/Val/Test/Best val/Final test score: 0.9957/0.9422/0.8822/0.9428/0.8829
+
+Epoch: 1440/1800, Average epoch time: 20.75s, Loss: 0.0613
+Train/Val/Test loss: 0.0420/0.3700/0.8604
+Train/Val/Test/Best val/Final test score: 0.9957/0.9425/0.8826/0.9428/0.8829
+
+Epoch  1443: reducing learning rate of group 0 to 1.6894e-04.
+Epoch: 1460/1800, Average epoch time: 20.75s, Loss: 0.0603
+Train/Val/Test loss: 0.0416/0.3629/0.8471
+Train/Val/Test/Best val/Final test score: 0.9958/0.9421/0.8816/0.9428/0.8829
+
+Epoch: 1480/1800, Average epoch time: 20.75s, Loss: 0.0605
+Train/Val/Test loss: 0.0415/0.3659/0.8498
+Train/Val/Test/Best val/Final test score: 0.9958/0.9421/0.8812/0.9428/0.8829
+
+Epoch  1494: reducing learning rate of group 0 to 1.2671e-04.
+Epoch: 1500/1800, Average epoch time: 20.73s, Loss: 0.0602
+Train/Val/Test loss: 0.0413/0.3638/0.8432
+Train/Val/Test/Best val/Final test score: 0.9958/0.9420/0.8818/0.9428/0.8829
+
+Epoch: 1520/1800, Average epoch time: 20.72s, Loss: 0.0602
+Train/Val/Test loss: 0.0412/0.3677/0.8598
+Train/Val/Test/Best val/Final test score: 0.9958/0.9425/0.8811/0.9428/0.8829
+
+Epoch: 1540/1800, Average epoch time: 20.71s, Loss: 0.0599
+Train/Val/Test loss: 0.0410/0.3687/0.8538
+Train/Val/Test/Best val/Final test score: 0.9959/0.9421/0.8812/0.9428/0.8829
+
+Epoch  1545: reducing learning rate of group 0 to 9.5029e-05.
+Epoch: 1560/1800, Average epoch time: 20.69s, Loss: 0.0601
+Train/Val/Test loss: 0.0407/0.3644/0.8432
+Train/Val/Test/Best val/Final test score: 0.9959/0.9424/0.8815/0.9428/0.8829
+
+Epoch: 1580/1800, Average epoch time: 20.68s, Loss: 0.0597
+Train/Val/Test loss: 0.0409/0.3643/0.8548
+Train/Val/Test/Best val/Final test score: 0.9959/0.9425/0.8819/0.9428/0.8829
+
+Epoch  1596: reducing learning rate of group 0 to 7.1272e-05.
+Epoch: 1600/1800, Average epoch time: 20.65s, Loss: 0.0596
+Train/Val/Test loss: 0.0407/0.3679/0.8495
+Train/Val/Test/Best val/Final test score: 0.9959/0.9424/0.8826/0.9428/0.8829
+
+Traceback (most recent call last):
+  File "/home/liweikai/gat_bot_ngnn/gat_bot_ngnn.py", line 593, in <module>
+    main()
+  File "/home/liweikai/gat_bot_ngnn/gat_bot_ngnn.py", line 578, in main
+    val_score, test_score = run(args, graph, labels, train_idx, val_idx, test_idx, evaluator, i + 1)
+  File "/home/liweikai/gat_bot_ngnn/gat_bot_ngnn.py", line 440, in run
+    val_score, best_val_score, new_final_test_score, new_final_pred) = run_epochs(args, graph, \
+  File "/home/liweikai/gat_bot_ngnn/gat_bot_ngnn.py", line 288, in run_epochs
+    loss = train(args, model, train_dataloader, labels, train_idx, criterion, optimizer, evaluator_wrapper)
+  File "/home/liweikai/gat_bot_ngnn/gat_bot_ngnn.py", line 150, in train
+    pred = model(subgraphs)
+  File "/home/cenyukuo/anaconda3/envs/gat_bot_ngnn/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/liweikai/gat_bot_ngnn/models.py", line 372, in forward
+    h = self.convs[i](subgraphs[i], h, efeat_emb).flatten(1, -1)  # 做GAT卷积
+  File "/home/cenyukuo/anaconda3/envs/gat_bot_ngnn/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/liweikai/gat_bot_ngnn/models.py", line 193, in forward
+    rst = ngnn_layer(rst)
+  File "/home/cenyukuo/anaconda3/envs/gat_bot_ngnn/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/liweikai/gat_bot_ngnn/models.py", line 32, in forward
+    output = super().forward(inp)    # positionwise feed-forward
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 606, in forward
+    output = super().forward(inp)
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 306, in forward
+    fwd = _fmoe_general_global_forward(
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 150, in _fmoe_general_global_forward
+    x = expert_fn(x, fwd_expert_count)
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 237, in expert_fn
+    return self.experts(inp, fwd_expert_count)
+  File "/home/cenyukuo/anaconda3/envs/gat_bot_ngnn/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 563, in forward
+    x = self.htoh4(inp, fwd_expert_count)
+  File "/home/cenyukuo/anaconda3/envs/gat_bot_ngnn/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 526, in forward
+    x = MOELinear.apply(inp, fwd_expert_count, self.weight, self.bias)
+  File "/home/liweikai/gat_bot_ngnn/fmoe_image.py", line 472, in forward
+    global_output_buf = fmoe_cuda.linear_forward(
+KeyboardInterrupt
+wandb: Waiting for W&B process to finish... (failed 255). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: \ 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: | 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: / 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: - 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: \ 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: | 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: / 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: - 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: \ 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: | 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_val_score ▁▅▅▆▆▆▆▇▇▇▇▇▇▇▇▇████████████████████████
+wandb: final_test_score ▁▅▆▇▇▇▇▇▇▇██████████████████████████████
+wandb:        test_loss ▂▁▂▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▆▅▅▆▆▆▇▇▇▇█▇▇██████
+wandb:       test_score ▁▅▅▆▇▇▇▇▇▇█████▇████████████████████████
+wandb:       train_loss █▆▆▅▄▄▃▃▃▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      train_score ▁▄▅▆▆▆▇▇▇▇▇▇████████████████████████████
+wandb:         val_loss █▂▅▂▁▂▂▂▂▁▁▁▂▃▂▂▃▂▃▃▃▃▃▃▃▄▄▄▄▅▅▄▄▅▅▅▅▅▅▅
+wandb:        val_score ▁▅▄▅▆▆▆▇▇▇▇▇▇▇▇▇▇███████████████████████
+wandb: 
+wandb: Run summary:
+wandb:   best_val_score 0.9428
+wandb: final_test_score 0.88292
+wandb:        test_loss 0.85284
+wandb:       test_score 0.88123
+wandb:       train_loss 0.0407
+wandb:      train_score 0.99593
+wandb:         val_loss 0.3666
+wandb:        val_score 0.94278
+wandb: 
+wandb: Synced icy-armadillo-219: https://wandb.ai/billywkli/GAT_BOT_NGNN_proteins/runs/2ddautly
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220604_071552-2ddautly/logs

@@ -1,0 +1,14 @@
+Loading G...
+Loading features...
+Loading class_map...
+Traceback (most recent call last):
+  File "/data/liweikai/GCNII/origin/utils.py", line 61, in run_dfs
+    run_dfs(adj, msk, v, ind, nb_nodes)
+  File "/data/liweikai/GCNII/origin/utils.py", line 61, in run_dfs
+    run_dfs(adj, msk, v, ind, nb_nodes)
+  File "/data/liweikai/GCNII/origin/utils.py", line 61, in run_dfs
+    run_dfs(adj, msk, v, ind, nb_nodes)
+  [Previous line repeated 996 more times]
+  File "/data/liweikai/GCNII/origin/utils.py", line 56, in run_dfs
+    if msk[u] == -1:
+KeyboardInterrupt

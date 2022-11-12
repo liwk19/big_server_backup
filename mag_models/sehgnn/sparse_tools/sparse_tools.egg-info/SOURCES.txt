@@ -1,0 +1,13 @@
+setup.py
+csrc/spspmm_diag.cpp
+csrc/spspmm_diag_unsym.cpp
+csrc/cpu/spspmm_diag_cpu.cpp
+csrc/cpu/spspmm_diag_unsym_cpu.cpp
+sparse_tools/__init__.py
+sparse_tools/spspmm_diag.py
+sparse_tools/spspmm_diag_unsym.py
+sparse_tools.egg-info/PKG-INFO
+sparse_tools.egg-info/SOURCES.txt
+sparse_tools.egg-info/dependency_links.txt
+sparse_tools.egg-info/requires.txt
+sparse_tools.egg-info/top_level.txt

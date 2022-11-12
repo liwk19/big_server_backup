@@ -1,0 +1,100 @@
+Loading G...
+Loading features...
+Loading class_map...
+cuda:0 pretrained/062627742d854f768d326b166f81f395.pt
+parameter number: 193900693
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Peak memuse 4.46 G
+Epoch:0100 train loss:0.371 | val loss:0.349 f1:71.309 best f1:72.519 Average epoch time: 3.20
+Epoch:0200 train loss:0.295 | val loss:0.266 f1:80.687 best f1:80.835 Average epoch time: 3.20
+Epoch:0300 train loss:0.241 | val loss:0.213 f1:85.694 best f1:86.085 Average epoch time: 3.20
+Epoch:0400 train loss:0.193 | val loss:0.165 f1:90.185 best f1:89.859 Average epoch time: 3.20
+Epoch:0500 train loss:0.159 | val loss:0.138 f1:92.293 best f1:92.472 Average epoch time: 3.20
+Epoch:0600 train loss:0.131 | val loss:0.109 f1:94.188 best f1:94.270 Average epoch time: 3.20
+Epoch:0700 train loss:0.109 | val loss:0.091 f1:95.394 best f1:95.576 Average epoch time: 3.20
+Epoch:0800 train loss:0.090 | val loss:0.075 f1:96.244 best f1:96.399 Average epoch time: 3.20
+Epoch:0900 train loss:0.077 | val loss:0.065 f1:96.729 best f1:96.954 Average epoch time: 3.20
+Epoch:1000 train loss:0.067 | val loss:0.055 f1:97.324 best f1:97.413 Average epoch time: 3.20
+Epoch:1100 train loss:0.057 | val loss:0.050 f1:97.625 best f1:97.768 Average epoch time: 3.20
+Epoch:1200 train loss:0.049 | val loss:0.042 f1:97.978 best f1:97.977 Average epoch time: 3.19
+Epoch:1300 train loss:0.045 | val loss:0.040 f1:98.173 best f1:98.214 Average epoch time: 3.19
+Epoch:1400 train loss:0.038 | val loss:0.038 f1:98.294 best f1:98.352 Average epoch time: 3.19
+Epoch:1500 train loss:0.035 | val loss:0.035 f1:98.438 best f1:98.498 Average epoch time: 3.19
+Epoch:1600 train loss:0.031 | val loss:0.033 f1:98.548 best f1:98.590 Average epoch time: 3.19
+Epoch:1700 train loss:0.028 | val loss:0.032 f1:98.646 best f1:98.667 Average epoch time: 3.19
+Epoch:1800 train loss:0.027 | val loss:0.030 f1:98.710 best f1:98.756 Average epoch time: 3.19
+Epoch:1900 train loss:0.024 | val loss:0.029 f1:98.777 best f1:98.800 Average epoch time: 3.19
+Epoch:2000 train loss:0.021 | val loss:0.030 f1:98.801 best f1:98.838 Average epoch time: 3.19
+Epoch:2100 train loss:0.020 | val loss:0.027 f1:98.952 best f1:98.963 Average epoch time: 3.19
+Epoch:2200 train loss:0.020 | val loss:0.028 f1:98.996 best f1:99.032 Average epoch time: 3.19
+Epoch:2300 train loss:0.019 | val loss:0.026 f1:99.030 best f1:99.076 Average epoch time: 3.19
+Epoch:2400 train loss:0.016 | val loss:0.024 f1:99.079 best f1:99.108 Average epoch time: 3.19
+Epoch:2500 train loss:0.016 | val loss:0.024 f1:99.113 best f1:99.120 Average epoch time: 3.19
+Epoch:2600 train loss:0.015 | val loss:0.024 f1:99.162 best f1:99.162 Average epoch time: 3.19
+Epoch:2700 train loss:0.014 | val loss:0.025 f1:99.150 best f1:99.180 Average epoch time: 3.19
+Epoch:2800 train loss:0.013 | val loss:0.025 f1:99.144 best f1:99.180 Average epoch time: 3.19
+Epoch:2900 train loss:0.013 | val loss:0.025 f1:99.178 best f1:99.200 Average epoch time: 3.19
+Epoch:3000 train loss:0.012 | val loss:0.026 f1:99.208 best f1:99.234 Average epoch time: 3.19
+Epoch:3100 train loss:0.012 | val loss:0.025 f1:99.181 best f1:99.234 Average epoch time: 3.19
+Epoch:3200 train loss:0.012 | val loss:0.025 f1:99.232 best f1:99.240 Average epoch time: 3.19
+Epoch:3300 train loss:0.011 | val loss:0.024 f1:99.202 best f1:99.254 Average epoch time: 3.19
+Epoch:3400 train loss:0.010 | val loss:0.033 f1:99.192 best f1:99.254 Average epoch time: 3.19
+Epoch:3500 train loss:0.009 | val loss:0.027 f1:99.206 best f1:99.269 Average epoch time: 3.19
+Epoch:3600 train loss:0.014 | val loss:0.027 f1:99.243 best f1:99.270 Average epoch time: 3.19
+Epoch:3700 train loss:0.009 | val loss:0.023 f1:99.266 best f1:99.271 Average epoch time: 3.19
+Epoch:3800 train loss:0.009 | val loss:0.023 f1:99.251 best f1:99.277 Average epoch time: 3.19
+Epoch:3900 train loss:0.009 | val loss:0.025 f1:99.252 best f1:99.277 Average epoch time: 3.19
+Epoch:4000 train loss:0.009 | val loss:0.027 f1:99.260 best f1:99.277 Average epoch time: 3.20
+Epoch:4100 train loss:0.008 | val loss:0.029 f1:99.261 best f1:99.282 Average epoch time: 3.22
+Epoch:4200 train loss:0.008 | val loss:0.028 f1:99.271 best f1:99.284 Average epoch time: 3.25
+Epoch:4300 train loss:0.008 | val loss:0.027 f1:99.252 best f1:99.284 Average epoch time: 3.32
+Epoch:4400 train loss:0.008 | val loss:0.030 f1:99.260 best f1:99.299 Average epoch time: 3.36
+Epoch:4500 train loss:0.007 | val loss:0.038 f1:99.252 best f1:99.299 Average epoch time: 3.40
+Epoch:4600 train loss:0.008 | val loss:0.034 f1:99.202 best f1:99.299 Average epoch time: 3.42
+Epoch:4700 train loss:0.007 | val loss:0.034 f1:99.229 best f1:99.299 Average epoch time: 3.43
+Epoch:4800 train loss:0.007 | val loss:0.029 f1:99.246 best f1:99.299 Average epoch time: 3.44
+Epoch:4900 train loss:0.007 | val loss:0.032 f1:99.212 best f1:99.299 Average epoch time: 3.45
+Epoch:5000 train loss:0.007 | val loss:0.032 f1:99.248 best f1:99.304 Average epoch time: 3.46
+Epoch:5100 train loss:0.007 | val loss:0.032 f1:99.273 best f1:99.304 Average epoch time: 3.47
+Epoch:5200 train loss:0.006 | val loss:0.029 f1:99.287 best f1:99.304 Average epoch time: 3.47
+Epoch:5300 train loss:0.006 | val loss:0.031 f1:99.287 best f1:99.304 Average epoch time: 3.47
+Epoch:5400 train loss:0.006 | val loss:0.030 f1:99.272 best f1:99.304 Average epoch time: 3.47
+Epoch:5500 train loss:0.006 | val loss:0.036 f1:99.253 best f1:99.304 Average epoch time: 3.47
+Epoch:5600 train loss:0.006 | val loss:0.033 f1:99.277 best f1:99.308 Average epoch time: 3.48
+Epoch:5700 train loss:0.006 | val loss:0.030 f1:99.277 best f1:99.308 Average epoch time: 3.47
+Epoch:5800 train loss:0.006 | val loss:0.035 f1:99.239 best f1:99.308 Average epoch time: 3.48
+Epoch:5900 train loss:0.006 | val loss:0.035 f1:99.247 best f1:99.316 Average epoch time: 3.47
+Epoch:6000 train loss:0.006 | val loss:0.038 f1:99.210 best f1:99.316 Average epoch time: 3.48
+Epoch:6100 train loss:0.006 | val loss:0.040 f1:99.241 best f1:99.323 Average epoch time: 3.48
+Epoch:6200 train loss:0.006 | val loss:0.037 f1:99.255 best f1:99.323 Average epoch time: 3.48
+Epoch:6300 train loss:0.006 | val loss:0.033 f1:99.254 best f1:99.323 Average epoch time: 3.48
+Epoch:6400 train loss:0.005 | val loss:0.040 f1:99.230 best f1:99.323 Average epoch time: 3.48
+Epoch:6500 train loss:0.006 | val loss:0.039 f1:99.259 best f1:99.323 Average epoch time: 3.48
+Epoch:6600 train loss:0.005 | val loss:0.046 f1:99.272 best f1:99.323 Average epoch time: 3.48
+Epoch:6700 train loss:0.005 | val loss:0.047 f1:99.233 best f1:99.323 Average epoch time: 3.48
+Epoch:6800 train loss:0.005 | val loss:0.045 f1:99.251 best f1:99.323 Average epoch time: 3.48
+Epoch:6900 train loss:0.006 | val loss:0.043 f1:99.227 best f1:99.323 Average epoch time: 3.49
+Epoch:7000 train loss:0.005 | val loss:0.056 f1:99.260 best f1:99.323 Average epoch time: 3.50
+Epoch:7100 train loss:0.005 | val loss:0.055 f1:99.227 best f1:99.323 Average epoch time: 3.50
+Epoch:7200 train loss:0.005 | val loss:0.064 f1:99.249 best f1:99.323 Average epoch time: 3.50
+Epoch:7300 train loss:0.006 | val loss:0.058 f1:99.232 best f1:99.323 Average epoch time: 3.51
+Epoch:7400 train loss:0.005 | val loss:0.056 f1:99.244 best f1:99.323 Average epoch time: 3.52
+Epoch:7500 train loss:0.005 | val loss:0.067 f1:99.225 best f1:99.323 Average epoch time: 3.55
+Epoch:7600 train loss:0.005 | val loss:0.070 f1:99.243 best f1:99.323 Average epoch time: 3.57
+Epoch:7700 train loss:0.005 | val loss:0.061 f1:99.283 best f1:99.323 Average epoch time: 3.60
+Epoch:7800 train loss:0.007 | val loss:0.035 f1:99.337 best f1:99.326 Average epoch time: 3.63
+Epoch:7900 train loss:0.004 | val loss:0.067 f1:99.275 best f1:99.337 Average epoch time: 3.65
+Epoch:8000 train loss:0.004 | val loss:0.068 f1:99.273 best f1:99.337 Average epoch time: 3.67
+parameter number: 193900693
+best val f1: 99.34
+Train cost: 33383.2039s
+Load 7799th epoch
+Test f1: 99.59

@@ -1,0 +1,20 @@
+Loading G...
+Loading features...
+Loading class_map...
+Traceback (most recent call last):
+  File "ppi.py", line 58, in <module>
+    test_labels, train_nodes, val_nodes, test_nodes = load_ppi()
+  File "/data/liweikai/GCNII/utils.py", line 153, in load_ppi
+    splits = dfs_split(adj)
+  File "/data/liweikai/GCNII/utils.py", line 72, in dfs_split
+    run_dfs(adj, ret, i, graph_id, nb_nodes)
+  File "/data/liweikai/GCNII/utils.py", line 61, in run_dfs
+    run_dfs(adj, msk, v, ind, nb_nodes)
+  File "/data/liweikai/GCNII/utils.py", line 61, in run_dfs
+    run_dfs(adj, msk, v, ind, nb_nodes)
+  File "/data/liweikai/GCNII/utils.py", line 61, in run_dfs
+    run_dfs(adj, msk, v, ind, nb_nodes)
+  [Previous line repeated 23 more times]
+  File "/data/liweikai/GCNII/utils.py", line 56, in run_dfs
+    if msk[u] == -1:
+KeyboardInterrupt

@@ -1,0 +1,182 @@
+Using backend: pytorch
+WARNING:root:The OGB package is out of date. Your version is 1.2.5, while the latest version is 1.3.3.
+Namespace(seed=2, dataset='ogbn-mag', gpu=0, root='../data/', emb_path='../data/', stages=[400, 400, 400, 400], extra_embedding='complex', embed_size=256, num_hops=2, label_feats=True, num_label_hops=2, hidden=512, dropout=0.5, n_layers_1=2, n_layers_2=2, n_layers_3=4, input_drop=0.1, att_drop=0.0, label_drop=0.0, residual=True, act='leaky_relu', bns=True, label_bns=True, amp=True, lr=0.001, weight_decay=0.0, eval_every=1, batch_size=10000, patience=100, threshold=0.75, gama=10.0, start_stage=0, reload='', moving_k=1, store_model=False, moe_widget=['feat_ngnn', 'label_ngnn'], num_expert=1, top_k=1, expert_drop=0.0, gate='naive')
+Use extra embeddings generated with the complex method
+Current num hops = 2
+./output/ogbn-mag/0ce4ea567b0c473a9cbba48a83c5b46d 
+
+Stage 0 
+
+Current num label hops = 2
+# Params: 8633887
+Epoch:20, avg epoch time:14.2253
+ Train loss:1.569595045513577, Val loss:1.6357147693634033, Test loss:1.6746186017990112
+ Train acc:56.3419, Val acc:53.1173, Test acc:51.5844
+Best Epoch 18,Val 53.6738, Test 52.2259
+
+Epoch:40, avg epoch time:14.2636
+ Train loss:1.447430067592197, Val loss:1.5597853660583496, Test loss:1.6042611598968506
+ Train acc:58.4890, Val acc:54.6618, Test acc:53.1129
+Best Epoch 36,Val 54.6633, Test 53.1272
+
+Epoch:60, avg epoch time:14.1073
+ Train loss:1.382921294560508, Val loss:1.5467478036880493, Test loss:1.5908616781234741
+ Train acc:59.7528, Val acc:54.8375, Test acc:53.3370
+Best Epoch 53,Val 55.0332, Test 53.2965
+
+Epoch:80, avg epoch time:14.1183
+ Train loss:1.3401294435773576, Val loss:1.5419738292694092, Test loss:1.5808627605438232
+ Train acc:60.6659, Val acc:54.8930, Test acc:53.4991
+Best Epoch 70,Val 55.0471, Test 53.5492
+
+Epoch:100, avg epoch time:13.9859
+ Train loss:1.3062660921187628, Val loss:1.5388827323913574, Test loss:1.575580358505249
+ Train acc:61.3904, Val acc:55.0440, Test acc:53.6112
+Best Epoch 94,Val 55.3276, Test 53.6780
+
+Epoch:120, avg epoch time:13.9545
+ Train loss:1.2809949753776428, Val loss:1.528794765472412, Test loss:1.569884181022644
+ Train acc:61.8777, Val acc:55.2598, Test acc:53.7113
+Best Epoch 113,Val 55.3292, Test 53.7924
+
+Epoch:140, avg epoch time:13.9424
+ Train loss:1.2597866266492814, Val loss:1.5429275035858154, Test loss:1.5826354026794434
+ Train acc:62.3353, Val acc:54.9299, Test acc:53.1939
+Best Epoch 138,Val 55.4155, Test 53.8854
+
+Epoch:160, avg epoch time:13.9376
+ Train loss:1.2429862344075764, Val loss:1.5596857070922852, Test loss:1.6025513410568237
+ Train acc:62.7407, Val acc:54.4675, Test acc:52.8410
+Best Epoch 138,Val 55.4155, Test 53.8854
+
+Epoch:180, avg epoch time:13.9051
+ Train loss:1.2249163748726013, Val loss:1.5343097448349, Test loss:1.581040859222412
+ Train acc:63.1176, Val acc:55.2798, Test acc:53.3823
+Best Epoch 167,Val 55.5203, Test 53.8329
+
+Epoch:200, avg epoch time:13.9148
+ Train loss:1.212999281429109, Val loss:1.5347661972045898, Test loss:1.5804111957550049
+ Train acc:63.4313, Val acc:55.2290, Test acc:53.6136
+Best Epoch 191,Val 55.5480, Test 53.7972
+
+Epoch:220, avg epoch time:13.8856
+ Train loss:1.2005469836885967, Val loss:1.547371506690979, Test loss:1.5920852422714233
+ Train acc:63.6174, Val acc:55.0086, Test acc:53.2845
+Best Epoch 216,Val 55.5758, Test 53.8639
+
+Epoch:240, avg epoch time:13.8578
+ Train loss:1.1894094887233915, Val loss:1.538732886314392, Test loss:1.5831859111785889
+ Train acc:63.9259, Val acc:55.4155, Test acc:53.6398
+Best Epoch 229,Val 55.5989, Test 53.7757
+
+Epoch:260, avg epoch time:13.8362
+ Train loss:1.1824891094177488, Val loss:1.528252124786377, Test loss:1.5725966691970825
+ Train acc:64.1232, Val acc:55.5218, Test acc:53.7781
+Best Epoch 229,Val 55.5989, Test 53.7757
+
+Epoch:280, avg epoch time:13.8481
+ Train loss:1.1738035054433913, Val loss:1.535932183265686, Test loss:1.5824062824249268
+ Train acc:64.2717, Val acc:55.5264, Test acc:53.6827
+Best Epoch 276,Val 55.7391, Test 53.9212
+
+Epoch:300, avg epoch time:13.8339
+ Train loss:1.1628190770981803, Val loss:1.5362688302993774, Test loss:1.5797574520111084
+ Train acc:64.5692, Val acc:55.4879, Test acc:53.8139
+Best Epoch 276,Val 55.7391, Test 53.9212
+
+Epoch:320, avg epoch time:13.8123
+ Train loss:1.1576634948215787, Val loss:1.5456594228744507, Test loss:1.591454029083252
+ Train acc:64.6226, Val acc:55.1026, Test acc:53.2988
+Best Epoch 276,Val 55.7391, Test 53.9212
+
+Epoch:340, avg epoch time:13.7725
+ Train loss:1.1505823248908633, Val loss:1.552113652229309, Test loss:1.5968111753463745
+ Train acc:64.8208, Val acc:55.0348, Test acc:53.2845
+Best Epoch 276,Val 55.7391, Test 53.9212
+
+Epoch:360, avg epoch time:13.7617
+ Train loss:1.1430064515461997, Val loss:1.5463955402374268, Test loss:1.588984727859497
+ Train acc:64.9695, Val acc:55.4448, Test acc:53.7757
+Best Epoch 276,Val 55.7391, Test 53.9212
+
+Epoch:380, avg epoch time:13.7391
+ Train loss:1.1361359849808708, Val loss:1.5595322847366333, Test loss:1.6058874130249023
+ Train acc:65.1826, Val acc:54.8205, Test acc:53.1176
+Best Epoch 376,Val 55.7438, Test 54.0690
+
+Epoch:400, avg epoch time:13.7007
+ Train loss:1.1333269656650604, Val loss:1.5380314588546753, Test loss:1.5849465131759644
+ Train acc:65.2301, Val acc:55.6297, Test acc:53.8520
+Best Epoch 383,Val 55.7638, Test 54.1143
+
+Best Epoch 383, Val 55.7638, Test 54.1143
+  0%|          | 0/74 [00:00<?, ?it/s]  1%|▏         | 1/74 [00:00<00:10,  6.68it/s]  3%|▎         | 2/74 [00:00<00:12,  5.54it/s]  4%|▍         | 3/74 [00:00<00:11,  6.27it/s]  5%|▌         | 4/74 [00:00<00:16,  4.15it/s]  7%|▋         | 5/74 [00:01<00:15,  4.55it/s]  8%|▊         | 6/74 [00:01<00:14,  4.74it/s] 11%|█         | 8/74 [00:01<00:11,  5.86it/s] 12%|█▏        | 9/74 [00:01<00:10,  6.12it/s] 14%|█▎        | 10/74 [00:01<00:09,  6.40it/s] 15%|█▍        | 11/74 [00:01<00:09,  6.50it/s] 16%|█▌        | 12/74 [00:02<00:09,  6.61it/s] 18%|█▊        | 13/74 [00:02<00:09,  6.41it/s] 19%|█▉        | 14/74 [00:02<00:11,  5.06it/s] 20%|██        | 15/74 [00:02<00:11,  5.11it/s] 22%|██▏       | 16/74 [00:02<00:10,  5.27it/s] 23%|██▎       | 17/74 [00:03<00:10,  5.33it/s] 24%|██▍       | 18/74 [00:03<00:10,  5.37it/s] 26%|██▌       | 19/74 [00:03<00:10,  5.37it/s] 27%|██▋       | 20/74 [00:03<00:08,  6.17it/s] 28%|██▊       | 21/74 [00:03<00:07,  6.78it/s] 30%|██▉       | 22/74 [00:03<00:08,  6.37it/s] 31%|███       | 23/74 [00:04<00:08,  5.88it/s] 34%|███▍      | 25/74 [00:04<00:06,  7.67it/s] 35%|███▌      | 26/74 [00:04<00:08,  5.87it/s] 36%|███▋      | 27/74 [00:04<00:08,  5.83it/s] 38%|███▊      | 28/74 [00:04<00:07,  6.18it/s] 39%|███▉      | 29/74 [00:05<00:07,  5.69it/s] 41%|████      | 30/74 [00:05<00:08,  5.27it/s] 42%|████▏     | 31/74 [00:05<00:08,  4.93it/s] 43%|████▎     | 32/74 [00:05<00:07,  5.40it/s] 45%|████▍     | 33/74 [00:06<00:10,  3.87it/s] 46%|████▌     | 34/74 [00:06<00:08,  4.49it/s] 47%|████▋     | 35/74 [00:06<00:07,  5.25it/s] 50%|█████     | 37/74 [00:06<00:06,  5.88it/s] 51%|█████▏    | 38/74 [00:06<00:06,  5.41it/s] 53%|█████▎    | 39/74 [00:07<00:06,  5.45it/s] 54%|█████▍    | 40/74 [00:07<00:05,  5.71it/s] 55%|█████▌    | 41/74 [00:07<00:05,  6.26it/s] 57%|█████▋    | 42/74 [00:07<00:06,  5.04it/s] 58%|█████▊    | 43/74 [00:07<00:06,  4.66it/s] 59%|█████▉    | 44/74 [00:08<00:07,  4.21it/s] 61%|██████    | 45/74 [00:08<00:06,  4.52it/s] 62%|██████▏   | 46/74 [00:08<00:06,  4.49it/s] 64%|██████▎   | 47/74 [00:08<00:05,  4.68it/s] 65%|██████▍   | 48/74 [00:08<00:05,  4.70it/s] 66%|██████▌   | 49/74 [00:09<00:05,  4.90it/s] 68%|██████▊   | 50/74 [00:09<00:04,  4.87it/s] 69%|██████▉   | 51/74 [00:09<00:04,  4.89it/s] 70%|███████   | 52/74 [00:09<00:05,  3.84it/s] 72%|███████▏  | 53/74 [00:10<00:05,  4.17it/s] 73%|███████▎  | 54/74 [00:10<00:04,  4.34it/s] 74%|███████▍  | 55/74 [00:10<00:04,  4.36it/s] 76%|███████▌  | 56/74 [00:10<00:03,  4.55it/s] 77%|███████▋  | 57/74 [00:10<00:03,  4.67it/s] 78%|███████▊  | 58/74 [00:11<00:03,  4.60it/s] 80%|███████▉  | 59/74 [00:11<00:03,  4.63it/s] 81%|████████  | 60/74 [00:11<00:03,  4.32it/s] 82%|████████▏ | 61/74 [00:12<00:03,  3.68it/s] 84%|████████▍ | 62/74 [00:12<00:02,  4.09it/s] 85%|████████▌ | 63/74 [00:12<00:02,  4.59it/s] 86%|████████▋ | 64/74 [00:12<00:01,  5.35it/s] 88%|████████▊ | 65/74 [00:12<00:01,  4.78it/s] 89%|████████▉ | 66/74 [00:12<00:01,  4.93it/s] 91%|█████████ | 67/74 [00:13<00:01,  4.95it/s] 92%|█████████▏| 68/74 [00:13<00:01,  5.36it/s] 93%|█████████▎| 69/74 [00:13<00:00,  5.69it/s] 95%|█████████▍| 70/74 [00:13<00:00,  5.76it/s] 96%|█████████▌| 71/74 [00:13<00:00,  4.22it/s] 97%|█████████▋| 72/74 [00:14<00:00,  4.90it/s] 99%|█████████▊| 73/74 [00:14<00:00,  5.46it/s]100%|██████████| 74/74 [00:14<00:00,  5.92it/s]100%|██████████| 74/74 [00:14<00:00,  5.15it/s]
+Stage 1 
+
+Stage 0 history model:
+	Train acc 75.3283 Val acc 55.7638 Test acc 54.1143
+Stage: 1, threshold 0.75, confident nodes: 37228 / 106818
+		 val confident nodes: 23518 / 64879,  val confident level: 0.8015137314796448
+		test confident nodes: 13710 / 41939, test confident_level: 0.7887673377990723
+Current num label hops = 2
+# Params: 11720737
+Epoch:20, avg epoch time:17.8585
+ Train loss:1.5478932430495078, Val loss:1.606431245803833, Test loss:1.6639983654022217
+ Train acc:58.0008, Val acc:56.9136, Test acc:55.5450
+Best Epoch 19,Val 56.9136, Test 55.5450
+
+Epoch:40, avg epoch time:18.9098
+ Train loss:1.3958430379184323, Val loss:1.642404556274414, Test loss:1.7183951139450073
+ Train acc:60.2880, Val acc:56.5237, Test acc:55.0252
+Best Epoch 34,Val 57.3452, Test 55.4400
+
+Epoch:60, avg epoch time:19.5291
+ Train loss:1.3124617409350268, Val loss:1.6634931564331055, Test loss:1.749718189239502
+ Train acc:61.7324, Val acc:56.9553, Test acc:55.0752
+Best Epoch 56,Val 57.4516, Test 55.6403
+
+Epoch:80, avg epoch time:19.8879
+ Train loss:1.2544805754476518, Val loss:1.6702138185501099, Test loss:1.7588642835617065
+ Train acc:62.7341, Val acc:57.1988, Test acc:55.2755
+Best Epoch 68,Val 57.5487, Test 55.5807
+
+Epoch:100, avg epoch time:20.0434
+ Train loss:1.2156039280677908, Val loss:1.6675350666046143, Test loss:1.7685974836349487
+ Train acc:63.5369, Val acc:57.6196, Test acc:55.5640
+Best Epoch 81,Val 57.6627, Test 55.8502
+
+Epoch:120, avg epoch time:20.0743
+ Train loss:1.1833966934858864, Val loss:1.690798282623291, Test loss:1.785848617553711
+ Train acc:64.2193, Val acc:57.3622, Test acc:55.4901
+Best Epoch 114,Val 57.7876, Test 55.8692
+
+Epoch:140, avg epoch time:20.0893
+ Train loss:1.1559387160770929, Val loss:1.7282941341400146, Test loss:1.8344794511795044
+ Train acc:64.7932, Val acc:57.2651, Test acc:55.3113
+Best Epoch 138,Val 57.8338, Test 55.9002
+
+Epoch:160, avg epoch time:20.1520
+ Train loss:1.1344498289165212, Val loss:1.687758445739746, Test loss:1.780618667602539
+ Train acc:65.2238, Val acc:57.6566, Test acc:55.8359
+Best Epoch 138,Val 57.8338, Test 55.9002
+
+Epoch:180, avg epoch time:20.1603
+ Train loss:1.1119776768470877, Val loss:1.7278316020965576, Test loss:1.8341275453567505
+ Train acc:65.7543, Val acc:57.5780, Test acc:55.6856
+Best Epoch 169,Val 57.8677, Test 55.6999
+
+Epoch:200, avg epoch time:20.2093
+ Train loss:1.0941624481286576, Val loss:1.7373175621032715, Test loss:1.8343281745910645
+ Train acc:66.1697, Val acc:57.6057, Test acc:55.6904
+Best Epoch 198,Val 57.8816, Test 55.7429
+
+Traceback (most recent call last):
+  File "/data/liweikai/sehgnn/large/main.py", line 407, in <module>
+    main(args)
+  File "/data/liweikai/sehgnn/large/main.py", line 267, in main
+    loss_train, train_acc = train_multi_stage(model, train_loader, enhance_loader, loss_fcn, optimizer, evaluator, device, feats, label_feats, labels_cuda, label_emb, predict_prob, args.gama, scalar=scalar)
+  File "/data/liweikai/sehgnn/large/utils.py", line 192, in train_multi_stage
+    batch_feats = {k: x[idx].to(device) for k, x in feats.items()}
+  File "/data/liweikai/sehgnn/large/utils.py", line 192, in <dictcomp>
+    batch_feats = {k: x[idx].to(device) for k, x in feats.items()}
+KeyboardInterrupt

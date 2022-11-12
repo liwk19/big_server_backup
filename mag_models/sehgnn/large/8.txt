@@ -1,0 +1,27 @@
+Using backend: pytorch
+WARNING:root:The OGB package is out of date. Your version is 1.2.5, while the latest version is 1.3.3.
+Namespace(seed=2, dataset='ogbn-mag', gpu=0, root='../data/', emb_path='../data/', stages=[400, 400, 400, 400], extra_embedding='complex', embed_size=256, num_hops=2, label_feats=True, num_label_hops=2, hidden=512, dropout=0.5, n_layers_1=2, n_layers_2=2, n_layers_3=4, input_drop=0.1, att_drop=0.0, label_drop=0.0, residual=True, act='leaky_relu', bns=True, label_bns=True, amp=True, lr=0.001, weight_decay=0.0, eval_every=1, batch_size=10000, patience=100, threshold=0.75, gama=10.0, start_stage=0, reload='', moving_k=1, store_model=False, moe_widget=['feat_ngnn', 'label_ngnn'], num_expert=2, top_k=1, expert_drop=0.0, gate='naive')
+Use extra embeddings generated with the complex method
+Current num hops = 2
+./output/ogbn-mag/5fd5e93372d547d8bb0119d05694c53a 
+
+Stage 0 
+
+Current num label hops = 2
+# Params: 8897569
+Traceback (most recent call last):
+  File "/data/liweikai/sehgnn/large/main.py", line 407, in <module>
+    main(args)
+  File "/data/liweikai/sehgnn/large/main.py", line 265, in main
+    loss_train, train_acc = train(model, train_loader, loss_fcn, optimizer, evaluator, device, feats, label_feats, labels_cuda, label_emb, scalar=scalar)
+  File "/data/liweikai/sehgnn/large/utils.py", line 138, in train
+    for batch in train_loader:
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+KeyboardInterrupt

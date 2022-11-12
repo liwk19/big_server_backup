@@ -1,0 +1,101 @@
+Using backend: pytorch
+WARNING:root:The OGB package is out of date. Your version is 1.2.5, while the latest version is 1.3.3.
+Namespace(seed=2, dataset='ogbn-mag', gpu=0, root='../data/', emb_path='../data/', stages=[400, 400, 400, 400], extra_embedding='complex', embed_size=256, num_hops=2, label_feats=True, num_label_hops=2, hidden=512, dropout=0.5, n_layers_1=2, n_layers_2=2, n_layers_3=4, input_drop=0.1, att_drop=0.0, label_drop=0.0, residual=True, act='leaky_relu', bns=True, label_bns=True, amp=True, lr=0.0005, weight_decay=0.0, eval_every=1, batch_size=10000, patience=100, threshold=0.75, gama=10.0, start_stage=0, reload='', moving_k=1, store_model=False, moe_widget=['feat_ngnn', 'label_ngnn'], num_expert=1, top_k=1, expert_drop=0.0, gate='naive')
+Use extra embeddings generated with the complex method
+Current num hops = 2
+./output/ogbn-mag/f8ade2c835c844bb8db9ff7085927f63 
+
+Stage 0 
+
+Current num label hops = 2
+# Params: 8633887
+Epoch:20, avg epoch time:15.2295
+ Train loss:1.6715606394268216, Val loss:1.6906461715698242, Test loss:1.7252990007400513
+ Train acc:54.6143, Val acc:52.1309, Test acc:50.8930
+Best Epoch 18,Val 52.7027, Test 51.2864
+
+Epoch:40, avg epoch time:15.1604
+ Train loss:1.5254903369479709, Val loss:1.6120604276657104, Test loss:1.6552656888961792
+ Train acc:57.1333, Val acc:53.5782, Test acc:52.0685
+Best Epoch 35,Val 53.7894, Test 52.3165
+
+Epoch:60, avg epoch time:15.1590
+ Train loss:1.4505084582737513, Val loss:1.576263427734375, Test loss:1.6175817251205444
+ Train acc:58.5063, Val acc:54.3874, Test acc:52.8840
+Best Epoch 53,Val 54.4753, Test 52.8005
+
+Epoch:80, avg epoch time:15.0979
+ Train loss:1.4003949619474865, Val loss:1.5654809474945068, Test loss:1.6063059568405151
+ Train acc:59.4772, Val acc:54.4059, Test acc:52.8935
+Best Epoch 76,Val 54.6571, Test 53.0222
+
+Epoch:100, avg epoch time:15.1091
+ Train loss:1.3621912740525746, Val loss:1.5728659629821777, Test loss:1.611343264579773
+ Train acc:60.2583, Val acc:54.2040, Test acc:52.5859
+Best Epoch 86,Val 54.9145, Test 53.4467
+
+Epoch:120, avg epoch time:15.2699
+ Train loss:1.3331758843527899, Val loss:1.5589286088943481, Test loss:1.5975189208984375
+ Train acc:60.8354, Val acc:54.5878, Test acc:52.9507
+Best Epoch 116,Val 54.9901, Test 53.3584
+
+Epoch:140, avg epoch time:15.4311
+ Train loss:1.3078505349537684, Val loss:1.5470019578933716, Test loss:1.5878229141235352
+ Train acc:61.4399, Val acc:54.8344, Test acc:53.1224
+Best Epoch 138,Val 55.2243, Test 53.5158
+
+Epoch:160, avg epoch time:15.5485
+ Train loss:1.2895384005137853, Val loss:1.552472472190857, Test loss:1.590857744216919
+ Train acc:61.7336, Val acc:54.7881, Test acc:53.0509
+Best Epoch 138,Val 55.2243, Test 53.5158
+
+Epoch:180, avg epoch time:15.6584
+ Train loss:1.2707543164964705, Val loss:1.5483745336532593, Test loss:1.591267466545105
+ Train acc:62.1393, Val acc:54.9916, Test acc:53.1129
+Best Epoch 171,Val 55.3029, Test 53.5850
+
+Epoch:200, avg epoch time:15.7384
+ Train loss:1.2539308600955539, Val loss:1.5507932901382446, Test loss:1.5943615436553955
+ Train acc:62.5458, Val acc:55.0163, Test acc:53.2035
+Best Epoch 189,Val 55.3245, Test 53.5277
+
+Epoch:220, avg epoch time:15.8227
+ Train loss:1.2426520207571605, Val loss:1.5536530017852783, Test loss:1.5973093509674072
+ Train acc:62.7685, Val acc:54.7496, Test acc:53.0485
+Best Epoch 209,Val 55.3785, Test 53.6756
+
+Epoch:240, avg epoch time:15.8950
+ Train loss:1.2290973474108984, Val loss:1.5312137603759766, Test loss:1.5726280212402344
+ Train acc:63.0796, Val acc:55.3831, Test acc:53.8210
+Best Epoch 234,Val 55.4586, Test 53.6184
+
+Epoch:260, avg epoch time:15.9022
+ Train loss:1.2179906406099834, Val loss:1.5315489768981934, Test loss:1.5706266164779663
+ Train acc:63.3272, Val acc:55.3184, Test acc:53.7209
+Best Epoch 234,Val 55.4586, Test 53.6184
+
+Epoch:280, avg epoch time:15.9352
+ Train loss:1.208727410861424, Val loss:1.5524213314056396, Test loss:1.5925676822662354
+ Train acc:63.5028, Val acc:55.0163, Test acc:53.2821
+Best Epoch 234,Val 55.4586, Test 53.6184
+
+Epoch:300, avg epoch time:15.9340
+ Train loss:1.1991728960521637, Val loss:1.5381836891174316, Test loss:1.5785322189331055
+ Train acc:63.7280, Val acc:55.3631, Test acc:53.7495
+Best Epoch 295,Val 55.5758, Test 53.8520
+
+Epoch:320, avg epoch time:15.9913
+ Train loss:1.1893428318084232, Val loss:1.528999924659729, Test loss:1.574806809425354
+ Train acc:64.0320, Val acc:55.5033, Test acc:53.9784
+Best Epoch 295,Val 55.5758, Test 53.8520
+
+Traceback (most recent call last):
+  File "/data/liweikai/sehgnn/large/main.py", line 407, in <module>
+    main(args)
+  File "/data/liweikai/sehgnn/large/main.py", line 265, in main
+    loss_train, train_acc = train(model, train_loader, loss_fcn, optimizer, evaluator, device, feats, label_feats, labels_cuda, label_emb, scalar=scalar)
+  File "/data/liweikai/sehgnn/large/utils.py", line 139, in train
+    batch_feats = {k: x[batch].to(device) for k, x in feats.items()}
+  File "/data/liweikai/sehgnn/large/utils.py", line 139, in <dictcomp>
+    batch_feats = {k: x[batch].to(device) for k, x in feats.items()}
+KeyboardInterrupt

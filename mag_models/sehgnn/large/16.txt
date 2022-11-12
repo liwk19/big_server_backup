@@ -1,0 +1,115 @@
+Using backend: pytorch
+WARNING:root:The OGB package is out of date. Your version is 1.2.5, while the latest version is 1.3.3.
+Namespace(seed=2, dataset='ogbn-mag', gpu=0, root='../data/', emb_path='../data/', stages=[400, 400, 400, 400], extra_embedding='complex', embed_size=256, num_hops=2, label_feats=True, num_label_hops=2, hidden=512, dropout=0.5, n_layers_1=2, n_layers_2=2, n_layers_3=4, input_drop=0.1, att_drop=0.0, label_drop=0.0, residual=True, act='leaky_relu', bns=True, label_bns=True, amp=True, lr=0.001, weight_decay=0.0, eval_every=1, batch_size=10000, patience=100, threshold=0.75, gama=10.0, start_stage=0, reload='', moving_k=1, store_model=False, moe_widget=['feat_ngnn', 'label_ngnn'], num_expert=8, top_k=1, expert_drop=0.0, gate='naive')
+Use extra embeddings generated with the complex method
+Current num hops = 2
+./output/ogbn-mag/0d2484787dda4143940b457e9087f772 
+
+Stage 0 
+
+Current num label hops = 2
+# Params: 10476583
+Epoch:20, avg epoch time:15.7922
+ Train loss:1.6155575362462846, Val loss:1.6596628427505493, Test loss:1.6992228031158447
+ Train acc:55.3671, Val acc:52.6041, Test acc:51.2292
+Best Epoch 17,Val 52.9709, Test 51.5797
+
+Epoch:40, avg epoch time:15.6743
+ Train loss:1.4825905864200895, Val loss:1.5815640687942505, Test loss:1.6219415664672852
+ Train acc:57.7287, Val acc:54.0082, Test acc:52.4428
+Best Epoch 39,Val 54.0082, Test 52.4428
+
+Epoch:60, avg epoch time:15.6295
+ Train loss:1.4145378347427127, Val loss:1.557012677192688, Test loss:1.5992711782455444
+ Train acc:59.0804, Val acc:54.3257, Test acc:52.7957
+Best Epoch 57,Val 54.8421, Test 53.1391
+
+Epoch:80, avg epoch time:15.5159
+ Train loss:1.3673807041985648, Val loss:1.559911847114563, Test loss:1.6058859825134277
+ Train acc:60.0565, Val acc:54.3751, Test acc:52.5239
+Best Epoch 70,Val 55.0964, Test 53.1486
+
+Epoch:100, avg epoch time:16.2454
+ Train loss:1.3342063237750341, Val loss:1.5414149761199951, Test loss:1.5861527919769287
+ Train acc:60.7271, Val acc:54.8652, Test acc:52.9698
+Best Epoch 80,Val 55.3214, Test 53.2535
+
+Epoch:120, avg epoch time:16.7558
+ Train loss:1.3075889405750094, Val loss:1.5644845962524414, Test loss:1.6105107069015503
+ Train acc:61.3114, Val acc:54.1577, Test acc:52.2783
+Best Epoch 113,Val 55.4463, Test 53.5921
+
+Epoch:140, avg epoch time:17.1592
+ Train loss:1.284290425361149, Val loss:1.5403692722320557, Test loss:1.5854436159133911
+ Train acc:61.7908, Val acc:54.9315, Test acc:53.0914
+Best Epoch 133,Val 55.6112, Test 53.5874
+
+Epoch:160, avg epoch time:17.4487
+ Train loss:1.2690123716990154, Val loss:1.5217475891113281, Test loss:1.5684822797775269
+ Train acc:62.1188, Val acc:55.7006, Test acc:53.7757
+Best Epoch 159,Val 55.7006, Test 53.7757
+
+Epoch:180, avg epoch time:17.5978
+ Train loss:1.251755159998697, Val loss:1.546044111251831, Test loss:1.591849684715271
+ Train acc:62.4498, Val acc:54.9423, Test acc:53.0389
+Best Epoch 159,Val 55.7006, Test 53.7757
+
+Epoch:200, avg epoch time:17.7673
+ Train loss:1.239694737252735, Val loss:1.571338176727295, Test loss:1.6176388263702393
+ Train acc:62.8129, Val acc:54.2564, Test acc:52.4548
+Best Epoch 159,Val 55.7006, Test 53.7757
+
+Epoch:220, avg epoch time:17.8519
+ Train loss:1.2264059214364915, Val loss:1.5326226949691772, Test loss:1.5808531045913696
+ Train acc:63.0996, Val acc:55.2459, Test acc:53.3751
+Best Epoch 159,Val 55.7006, Test 53.7757
+
+Epoch:240, avg epoch time:17.9382
+ Train loss:1.2137269235792614, Val loss:1.5499924421310425, Test loss:1.5996958017349243
+ Train acc:63.3798, Val acc:54.8837, Test acc:52.9197
+Best Epoch 159,Val 55.7006, Test 53.7757
+
+Best Epoch 159, Val 55.7006, Test 53.7757
+  0%|          | 0/74 [00:00<?, ?it/s]  1%|▏         | 1/74 [00:00<00:17,  4.16it/s]  3%|▎         | 2/74 [00:00<00:20,  3.57it/s]  4%|▍         | 3/74 [00:00<00:15,  4.44it/s]  5%|▌         | 4/74 [00:00<00:17,  4.09it/s]  7%|▋         | 5/74 [00:01<00:16,  4.08it/s]  8%|▊         | 6/74 [00:01<00:16,  4.22it/s]  9%|▉         | 7/74 [00:01<00:16,  4.17it/s] 11%|█         | 8/74 [00:01<00:15,  4.30it/s] 12%|█▏        | 9/74 [00:02<00:14,  4.47it/s] 14%|█▎        | 10/74 [00:02<00:14,  4.43it/s] 15%|█▍        | 11/74 [00:02<00:14,  4.39it/s] 16%|█▌        | 12/74 [00:02<00:13,  4.46it/s] 18%|█▊        | 13/74 [00:03<00:14,  4.27it/s] 19%|█▉        | 14/74 [00:03<00:18,  3.22it/s] 20%|██        | 15/74 [00:03<00:17,  3.32it/s] 22%|██▏       | 16/74 [00:04<00:15,  3.76it/s] 23%|██▎       | 17/74 [00:04<00:13,  4.29it/s] 24%|██▍       | 18/74 [00:04<00:11,  4.77it/s] 26%|██▌       | 19/74 [00:04<00:10,  5.18it/s] 27%|██▋       | 20/74 [00:04<00:11,  4.69it/s] 28%|██▊       | 21/74 [00:05<00:12,  4.11it/s] 30%|██▉       | 22/74 [00:05<00:14,  3.66it/s] 31%|███       | 23/74 [00:05<00:18,  2.73it/s] 32%|███▏      | 24/74 [00:06<00:18,  2.71it/s] 34%|███▍      | 25/74 [00:06<00:15,  3.21it/s] 35%|███▌      | 26/74 [00:06<00:12,  3.71it/s] 36%|███▋      | 27/74 [00:06<00:11,  4.15it/s] 38%|███▊      | 28/74 [00:07<00:10,  4.38it/s] 39%|███▉      | 29/74 [00:07<00:09,  4.57it/s] 41%|████      | 30/74 [00:07<00:08,  5.01it/s] 42%|████▏     | 31/74 [00:07<00:08,  5.26it/s] 43%|████▎     | 32/74 [00:07<00:09,  4.63it/s] 45%|████▍     | 33/74 [00:08<00:11,  3.66it/s] 46%|████▌     | 34/74 [00:08<00:09,  4.06it/s] 47%|████▋     | 35/74 [00:08<00:09,  4.03it/s] 49%|████▊     | 36/74 [00:08<00:08,  4.45it/s] 50%|█████     | 37/74 [00:09<00:08,  4.48it/s] 51%|█████▏    | 38/74 [00:09<00:07,  4.79it/s] 53%|█████▎    | 39/74 [00:09<00:07,  4.85it/s] 54%|█████▍    | 40/74 [00:09<00:07,  4.73it/s] 55%|█████▌    | 41/74 [00:09<00:07,  4.39it/s] 57%|█████▋    | 42/74 [00:10<00:09,  3.29it/s] 58%|█████▊    | 43/74 [00:10<00:08,  3.56it/s] 59%|█████▉    | 44/74 [00:10<00:07,  3.80it/s] 61%|██████    | 45/74 [00:11<00:07,  3.83it/s] 62%|██████▏   | 46/74 [00:11<00:07,  3.71it/s] 64%|██████▎   | 47/74 [00:11<00:07,  3.59it/s] 65%|██████▍   | 48/74 [00:11<00:06,  3.82it/s] 66%|██████▌   | 49/74 [00:12<00:05,  4.21it/s] 68%|██████▊   | 50/74 [00:12<00:05,  4.54it/s] 69%|██████▉   | 51/74 [00:12<00:05,  4.07it/s] 70%|███████   | 52/74 [00:13<00:06,  3.27it/s] 72%|███████▏  | 53/74 [00:13<00:05,  3.52it/s] 73%|███████▎  | 54/74 [00:13<00:04,  4.10it/s] 74%|███████▍  | 55/74 [00:13<00:04,  4.62it/s] 76%|███████▌  | 56/74 [00:13<00:04,  4.38it/s] 77%|███████▋  | 57/74 [00:14<00:04,  4.25it/s] 78%|███████▊  | 58/74 [00:14<00:04,  3.70it/s] 80%|███████▉  | 59/74 [00:14<00:03,  4.27it/s] 81%|████████  | 60/74 [00:14<00:02,  4.73it/s] 82%|████████▏ | 61/74 [00:15<00:03,  3.64it/s] 84%|████████▍ | 62/74 [00:15<00:03,  3.99it/s] 85%|████████▌ | 63/74 [00:15<00:02,  4.39it/s] 86%|████████▋ | 64/74 [00:15<00:02,  4.62it/s] 88%|████████▊ | 65/74 [00:15<00:01,  4.57it/s] 89%|████████▉ | 66/74 [00:16<00:01,  4.58it/s] 91%|█████████ | 67/74 [00:16<00:01,  4.52it/s] 92%|█████████▏| 68/74 [00:16<00:01,  4.22it/s] 93%|█████████▎| 69/74 [00:16<00:01,  4.52it/s] 95%|█████████▍| 70/74 [00:17<00:00,  4.17it/s] 96%|█████████▌| 71/74 [00:17<00:00,  3.71it/s] 97%|█████████▋| 72/74 [00:17<00:00,  4.47it/s] 99%|█████████▊| 73/74 [00:17<00:00,  4.85it/s]100%|██████████| 74/74 [00:17<00:00,  5.51it/s]100%|██████████| 74/74 [00:17<00:00,  4.13it/s]
+Stage 1 
+
+Stage 0 history model:
+	Train acc 69.1596 Val acc 55.7006 Test acc 53.7757
+Stage: 1, threshold 0.75, confident nodes: 33343 / 106818
+		 val confident nodes: 21158 / 64879,  val confident level: 0.8180829882621765
+		test confident nodes: 12185 / 41939, test confident_level: 0.8046779036521912
+Current num label hops = 2
+# Params: 15406129
+Traceback (most recent call last):
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/serialization.py", line 379, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/serialization.py", line 499, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/liweikai/sehgnn/large/main.py", line 407, in <module>
+    main(args)
+  File "/data/liweikai/sehgnn/large/main.py", line 295, in main
+    torch.save(model.state_dict(), f'{checkpt_file}_{stage}.pkl')
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/serialization.py", line 380, in save
+    return
+  File "/home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:300] . unexpected pos 5337728 vs 5337620
+terminate called after throwing an instance of 'c10::Error'
+  what():  [enforce fail at inline_container.cc:300] . unexpected pos 5337728 vs 5337620
+frame #0: c10::ThrowEnforceNotMet(char const*, int, char const*, std::string const&, void const*) + 0x47 (0x7f85dd668ae7 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x2796ff0 (0x7f8630831ff0 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: <unknown function> + 0x27925cc (0x7f863082d5cc in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: caffe2::serialize::PyTorchStreamWriter::writeRecord(std::string const&, void const*, unsigned long, bool) + 0xb5 (0x7f8630835235 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: caffe2::serialize::PyTorchStreamWriter::writeEndOfFile() + 0x173 (0x7f8630835523 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: caffe2::serialize::PyTorchStreamWriter::~PyTorchStreamWriter() + 0x125 (0x7f8630835795 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0xb396d3 (0x7f86d905e6d3 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x2a35f9 (0x7f86d87c85f9 in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #8: <unknown function> + 0x2a48fe (0x7f86d87c98fe in /home/cenyukuo/anaconda3/envs/drgat/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #19: __libc_start_main + 0xf3 (0x7f86e82ed083 in /lib/x86_64-linux-gnu/libc.so.6)
+

@@ -1,0 +1,9 @@
+usage: ppi.py [-h] [--seed SEED] [--epochs EPOCHS] [--lr LR] [--wd WD]
+              [--layer LAYER] [--hidden HIDDEN] [--dropout DROPOUT]
+              [--patience PATIENCE] [--data DATA] [--dev DEV] [--alpha ALPHA]
+              [--lamda LAMDA] [--variant] [--num_expert NUM_EXPERT]
+              [--top_k TOP_K] [--gate {naive,mlp}]
+              [--moe_widget {ngnn} [{ngnn} ...]] [--label_rate LABEL_RATE]
+              [--label_warmup LABEL_WARMUP [LABEL_WARMUP ...]]
+              [--label_onehot] [--expert_drop EXPERT_DROP]
+ppi.py: error: unrecognized arguments: --ngnn_first
